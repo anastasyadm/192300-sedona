@@ -15,9 +15,11 @@
             <li>
               <a href="#">Фото и видео</a>
             </li>
-            <div class="index_logo">
-              <a href="#"><img src="http://placehold.it/150x100" width="28" height="24" alt="Sedona"></a>
-            </div>
+            <li>
+              <div class="index_logo">
+                <a href="#"><img src="http://placehold.it/150x100" width="28" height="24" alt="Sedona"></a>
+              </div>
+            </li>
             <li>
               <a href="#">Карта штата</a>
             </li>
@@ -28,42 +30,45 @@
         </nav>
       </div>
     </header>
-    <section class="infrastructure">
-      <h2>Инфраструктура</h2>
-      <form>
-        <input type="checkbox" id="check1"><label for="check1">Бассейн</label>
-        <input type="checkbox" id="check2"><label for="check2">Парковка</label>
-        <input type="checkbox" id="check3"><label for="check3">WI-FI</label>
-      </form>
-    </section>
-    <section class="property_type">
-      <h2>Тип жилья</h2>
-      <form>
-        <input type="checkbox" id="check1"><label for="check1">Гостиница</label>
-        <input type="checkbox" id="check2"><label for="check2">Мотель</label>
-        <input type="checkbox" id="check3"><label for="check3">Апартаменты</label>
-      </form>
-    </section>
-    <section class="price">
-      <h2>Стоимость в сутки (Р)</h2>
-      <table border="1">
-        <tr>
-          <td>от</td>
-          <td>до</td>
-        </tr>
-      </table>
-      <form>
-        <input type="range" min="0" id="check1"><label for="check1">Гостиница</label>
-        <input type="submit" value="Показать">
-      </form>
-    </section>
-    <section class="breadcrumbs">
+    <form>
+      <fieldset>
+        <legend>Инфраструктура</legend>
+          <input type="checkbox" id="check1"><label for="check1">Бассейн</label>
+          <input type="checkbox" id="check2"><label for="check2">Парковка</label>
+          <input type="checkbox" id="check3"><label for="check3">WI-FI</label>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья</legend>
+          <input type="checkbox" id="check1"><label for="check1">Гостиница</label>
+          <input type="checkbox" id="check2"><label for="check2">Мотель</label>
+          <input type="checkbox" id="check3"><label for="check3">Апартаменты</label>
+      </fieldset>
+      <section class="price">
+        <h2>Стоимость в сутки (Р)</h2>
+        <div class="range-filter">
+            <div class="range-controls">
+                <div class="scale"><div style="margin-left:10px;width:150px;" class="bar"></div></div>
+                <div class="toggle min-toggle" style="left:40px;"></div>
+                <div class="toggle max-toggle" style="left:180px;"></div>
+            </div>
+            <div class="price-controls">
+                от <input class="min-price" type="text" value="0">
+                до <input class="max-price" type="text" value="3 000">
+            </div>
+        </div>
+        <div>
+          <input type="range" min="0" id="check1"><label for="check1">Гостиница</label>
+          <input type="submit" value="Показать">
+        </div>
+      </section>
+    </form>
+    <section class="sort">
       <ul>
         <li>
-          <p>Найдено:</p>
+          Найдено:
         </li>
         <li>
-          <p>Сортировка:</p>
+          Сортировка:
         </li>
         <li>
           <a href="#">По цене</a>
@@ -76,7 +81,7 @@
         </li>
       </ul>
     </section>
-    <article class="amara resort">
+    <article class="amara_resort">
         <img src="http://placehold.it/150x100" width="168" height="104" alt="Amara resort&spa">
         <p>Amara resort&spa</p>
         <p>Гостиница</p>
@@ -86,7 +91,7 @@
           <a href="#">Забронировать</a>
         </div>
     </article>
-    <article class="Desert quail inn">
+    <article class="Desert_quail_inn">
         <img src="http://placehold.it/150x100" width="168" height="104" alt="Desert quail inn">
         <p>Desert quail inn</p>
         <p>Мотель</p>
@@ -96,7 +101,7 @@
           <a href="#">Забронировать</a>
         </div>
     </article>
-    <article class="Villas at poco diablo">
+    <article class="Villas_at_poco_diablo">
         <img src="http://placehold.it/150x100" width="168" height="104" alt="Villas at poco diablo">
         <p>Villas at poco diablo</p>
         <p>Апартаменты</p>
