@@ -1,0 +1,17 @@
+body{
+  text-transform: uppercase;
+}
+.first_reason>p{
+  font-size: 1em;
+}
+.first_reason>h2{
+  font-size: 1em;
+  text-align: center;
+}
+.first_reason{
+  background-color: #81b3d2;
+  color: white;
+}
+.advices_name>h2{
+  font-weight: bold;
+}
