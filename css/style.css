@@ -2,10 +2,10 @@ body{
   text-transform: uppercase;
 }
 .first_reason>p{
-  font-size: 1em;
+  font-size: 15px;
 }
 .first_reason>h2{
-  font-size: 1em;
+  font-size: 15px;
   text-align: center;
 }
 .first_reason{
