@@ -1,5 +1,6 @@
 body{
   text-transform: uppercase;
+  text-align: center;
 }
 .first_reason>p{
   font-size: 15px;
@@ -11,7 +12,96 @@ body{
 .first_reason{
   background-color: #81b3d2;
   color: white;
+  float: left;
+  width: 380px;
+  height: 260px;
+  margin-left: 50px;
+  text-align: center;
 }
-.advices_name>h2{
-  font-weight: bold;
+.reason_picture{
+  float: left;
+  height: 260px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: red;
+}
+.advices{
+  clear: both;
+}
+.advices_item_house{
+  float: left;
+  width: 350px;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-align: center;
+
+}
+.advices_item_eat{
+  float: left;
+  width: 350px;
+  margin-right: 50px;
+  text-align: center;
+
+}
+.advices_item_present{
+  float: left;
+  width: 380px;
+  margin-left: 50px;
+  text-align: center;
+
+}
+.second_reason{
+  background-color: #81b3d2;
+  color: white;
+  float: left;
+  width: 380px;
+  height: 260px;
+  margin-left: 50px;
+  text-align: center;
+}
+.reasons3-5{
+  clear: both;
+}
+.third_reason{
+  float: left;
+  width: 350px;
+  margin-right: 50px;
+  margin-left: 80px;
+  text-align: center;
+  background-color: blue;
+}
+.fourth_reason{
+  float: left;
+  width: 350px;
+  margin-right: 50px;
+  text-align: center;
+  background-color: green;
+}
+.fifth_reason{
+  float: left;
+  width: 380px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: red;
+}
+
+ul>li{
+  display: inline;
+  padding: 50px;
+}
+.hotel{
+  clear: both;
+}
+.main_footer{
+  clear: both;
+}
+.container>p{
+  float: left;
+}
+.footer_social{
+  float: left;
+  text-align: center;
+}
+.footer_copyright{
+  float: left;
 }

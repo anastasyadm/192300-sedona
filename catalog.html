@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style_catalog.css" rel="stylesheet">
   </head>
   <body>
     <header class="main_header">
@@ -16,7 +17,7 @@
               <a href="#">Фото и видео</a>
             </li>
             <li>
-              <a href="#"><img src="http://placehold.it/150x100" width="28" height="24" alt="Sedona"></a>
+              <a href="#"><img src="img\Logo.png"  alt="Sedona"></a>
             </li>
             <li>
               <a href="#">Карта штата</a>
@@ -30,17 +31,33 @@
     </header>
     <main>
       <form>
-        <fieldset>
+        <fieldset class="infrastructure">
           <legend>Инфраструктура</legend>
-            <input type="checkbox" id="check1"><label for="check1">Бассейн</label>
-            <input type="checkbox" id="check2"><label for="check2">Парковка</label>
-            <input type="checkbox" id="check3"><label for="check3">WI-FI</label>
+            <ul>
+              <li>
+                <input type="checkbox" id="check1"><label for="check1">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" id="check2"><label for="check2">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" id="check3"><label for="check3">WI-FI</label>
+              </li>
+            </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="type_house">
           <legend>Тип жилья</legend>
-            <input type="checkbox" id="check1"><label for="check1">Гостиница</label>
-            <input type="checkbox" id="check2"><label for="check2">Мотель</label>
-            <input type="checkbox" id="check3"><label for="check3">Апартаменты</label>
+            <ul>
+              <li>
+                <input type="checkbox" id="check1"><label for="check1">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" id="check2"><label for="check2">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="check3"><label for="check3">Апартаменты</label>
+              </li>
+            </ul>
         </fieldset>
         <section class="price">
           <h2>Стоимость в сутки (Р)</h2>
@@ -86,53 +103,61 @@
           </li>
         </ul>
       </section>
-      <article class="amara_resort">
-          <img src="http://placehold.it/150x100" width="168" height="104" alt="Amara resort&spa">
-          <p>Amara resort&spa</p>
-          <p>Гостиница</p>
-          <p>от 3500 р.</p>
-          <div class="features">
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <p>Рейтинг:8,5</p>
-          </div>
-      </article>
-      <article class="Desert_quail_inn">
-          <img src="http://placehold.it/150x100" width="168" height="104" alt="Desert quail inn">
-          <p>Desert quail inn</p>
-          <p>Мотель</p>
-          <p>от 2000 р.</p>
-          <div class="features">
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <p>Рейтинг:8,9</p>
-          </div>
-      </article>
-      <article class="Villas_at_poco_diablo">
-          <img src="http://placehold.it/150x100" width="168" height="104" alt="Villas at poco diablo">
-          <p>Villas at poco diablo</p>
-          <p>Апартаменты</p>
-          <p>от 4000 р.</p>
-          <div class="features">
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-            <p>Рейтинг:9,2</p>
-          </div>
+      <div class="hotels">
+        <article class="amara_resort">
+            <img src="img\amara.jpg" alt="Amara resort&spa">
+            <div class="name_hotel">
+              <p>Amara resort&spa</p>
+              <p>Гостиница</p>
+              <p>от 3500 р.</p>
+            </div>
+            <div class="features">
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </div>
+            <div class="rating">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <p>Рейтинг:8,5</p>
+            </div>
+        </article>
+        <article class="Desert_quail_inn">
+            <img src="img\desert.jpg" alt="Desert quail inn">
+            <div class="name_hotel">
+              <p>Desert quail inn</p>
+              <p>Мотель</p>
+              <p>от 2000 р.</p>
+            </div>
+            <div class="features">
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </div>
+            <div class="rating">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <p>Рейтинг:8,9</p>
+            </div>
+        </article>
+        <article class="Villas_at_poco_diablo">
+            <img src="img\villas.jpg" alt="Villas at poco diablo">
+            <div class="name_hotel">
+              <p>Villas at poco diablo</p>
+              <p>Апартаменты</p>
+              <p>от 4000 р.</p>
+            </div>
+            <div class="features">
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </div>
+            <div class="rating">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
+              <p>Рейтинг:9,2</p>
+            </div>
+        </div>
       </article>
     </main>
     <footer class="main_footer">

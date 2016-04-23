@@ -1,0 +1,54 @@
+body{
+  text-transform: uppercase;
+  /*text-align: center;*/
+}
+.main_navigation>ul>li{
+  display: inline;
+  padding: 50px;
+}
+
+.price{
+  float: right;
+  display: inline;
+  width: 500px;
+}
+.infrastructure{
+  width: 80px;
+}
+.type_house{
+  width: 200px;
+  float: left;
+}
+.sort>ul>li{
+  clear: both;
+  display: inline;
+  padding: 10px;
+}
+.name_hotel{
+  float: left;
+  height: 200px;
+}
+.features{
+  float: left;
+  
+}
+.amara_resort>img{
+  float: left;
+  clear: both;
+}
+.Desert_quail_inn>img{
+  float: left;
+  clear: both;
+}
+
+.Villas_at_poco_diablo>img{
+  float: left;
+  clear: both;
+}
+
+.rating{
+  float: right;
+}
+.main_footer{
+  clear: both;
+}

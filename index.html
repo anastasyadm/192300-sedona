@@ -17,7 +17,7 @@
               <a href="#">Фото и видео</a>
             </li>
             <li>
-              <a href="#"><img src="img\Logo.png" width="28" height="24" alt="Sedona"></a>
+              <a href="#"><img src="img\Logo.png" alt="Sedona"></a>
             </li>
             <li>
               <a href="#">Карта штата</a>
@@ -31,7 +31,7 @@
     </header>
     <main>
       <div class="picture">
-        <img src="img\Background.png" width="368" height="204" alt="Sedona">
+        <img src="img\Background.jpg" alt="Sedona">
       </div>
       <div class="welcome">
         <b>Седона-небольшой городок в Аризоне, заслуживающий большего!</b>
@@ -41,25 +41,27 @@
         <h2>Настоящий городок</h2>
         <p> - №1 - </p>
         <p>Седона не аттракцион для туристов там течет своя жизнь</p>
-        <img src="img\first_reason.jpg" width="475" height="124">
+      </div>
+      <div class="reason_picture">
+        <img src="img\first_reason.jpg">
       </div>
       <section class="advices">
-        <div class="advices_item">
-          <img src="img\house.png" width="108" height="104">
+        <div class="advices_item_house">
+          <img src="img\house.png">
           <div class="advices_name">
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
         </div>
-        <div class="advices_item">
-          <img src="img\eat.png" width="108" height="104">
+        <div class="advices_item_eat">
+          <img src="img\eat.png">
           <div class="advices_name">
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочарутесь!</p>
           </div>
         </div>
-        <div class="advices_item">
-          <img src="img\present.png" width="108" height="104">
+        <div class="advices_item_present">
+          <img src="img\present.png">
           <div class="advices_name">
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
@@ -71,36 +73,41 @@
           <h2>Там есть мост дьявола</h2>
           <p>№2</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          <img src="img\second_reason.jpg" width="468" height="104">
         </div>
-        <div class="third_reason">
-          <h2>Небольшая площадь</h2>
-          <p>№3</p>
-          <p>Все достопримечательности находятся очень близко</p>
+        <div class="reason_picture">
+          <img src="img\second_reason.jpg">
         </div>
-        <div class="fourth_reason">
-          <h2>Красивая дорога</h2>
-          <p>№4</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="fifth_reason">
-          <h2>Мало туристов</h2>
-          <p>№5</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
+        <div class="reasons3-5">
+          <div class="third_reason">
+            <h2>Небольшая площадь</h2>
+            <p>№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="fourth_reason">
+            <h2>Красивая дорога</h2>
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="fifth_reason">
+            <h2>Мало туристов</h2>
+            <p>№5</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+      </div>
       </section>
-      <h3>Заинтересовались?</h3>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <div class="search">
-        <a href="#">Поиск гостиницы в Седоне</a>
-        <img src="img\map.jpg" width="468" height="204">
-        <form>
-          <label for="check1">Дата заезда<input type="date" id="check1">
-          <label for="check2">Дата выезда<input type="date" id="check2">
-          <label for="check3">Взрослые<input type="range" min="0" max="100" id="check3">
-          <label for="check4">Дети<input type="range" min="0" max="100" id="check4">
-          <input type="submit" value="Найти">
-        </form>
+      <div class="hotel">
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="search">
+          <a href="#">Поиск гостиницы в Седоне</a>
+          <img src="img\map.jpg" width="468" height="204">
+          <form>
+            <label for="check1">Дата заезда<input type="date" id="check1">
+            <label for="check2">Дата выезда<input type="date" id="check2">
+            <label for="check3">Взрослые<input type="range" min="0" max="100" id="check3">
+            <label for="check4">Дети<input type="range" min="0" max="100" id="check4">            <input type="submit" value="Найти">
+          </form>
+      </div>
       </main>
       <footer class="main_footer">
         <div class="container">
