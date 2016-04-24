@@ -6,23 +6,33 @@ body{
   display: inline;
   padding: 50px;
 }
-
 .price{
   float: right;
   display: inline;
-  width: 500px;
+  width: 900px;
+  background-color: yellow;
+  margin-top: -115px;
+}
+.type_house{
+  clear: both;
+  width: 200px;
+  float: left;
+  border-color: red;
+  margin-top: -125px;
+  margin-left: 255px;
 }
 .infrastructure{
   width: 80px;
-}
-.type_house{
-  width: 200px;
-  float: left;
+  border-color: red;
 }
 .sort>ul>li{
   clear: both;
   display: inline;
   padding: 10px;
+}
+.sort{
+  background-color: red;
+  margin-top: 55px;
 }
 .name_hotel{
   float: left;
