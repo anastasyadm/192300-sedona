@@ -30,7 +30,7 @@ body{
 }
 .features{
   float: left;
-  
+
 }
 .amara_resort>img{
   float: left;
@@ -51,4 +51,8 @@ body{
 }
 .main_footer{
   clear: both;
+}
+.social_btn_vk, .social_btn_fb, .social_btn_youtube{
+  background-color: #81b3d2;
+  width: 50px;
 }
