@@ -1,90 +1,60 @@
-body{
+.container{
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
+  min-width: 768px;
+}
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 .first_reason>p{
   font-size: 15px;
+
 }
 .first_reason>h2{
   font-size: 15px;
   text-align: center;
 }
+.reason{
+  float: left;
+}
 .first_reason{
   background-color: #81b3d2;
   color: white;
-  float: left;
-  width: 380px;
-  height: 260px;
-  margin-left: 50px;
+  width: 33%;
+  margin-left: 65px;
   text-align: center;
 }
 .reason_picture{
-  float: left;
-  height: 260px;
-  margin-left: 10px;
-  text-align: center;
+  width: 67%;
   background-color: red;
 }
 .advices{
   clear: both;
 }
-.advices_item_house{
+.advices_item{
   float: left;
-  width: 350px;
-  margin-right: 50px;
-  margin-left: 50px;
+  width: 33.33%;
   text-align: center;
-
 }
-.advices_item_eat{
-  float: left;
-  width: 350px;
-  margin-right: 50px;
-  text-align: center;
 
-}
-.advices_item_present{
-  float: left;
-  width: 380px;
-  margin-left: 50px;
-  text-align: center;
-
-}
 .second_reason{
   background-color: #81b3d2;
   color: white;
-  float: left;
-  width: 380px;
-  height: 260px;
-  margin-left: 50px;
+  width: 33%;
+  margin-left: 65px;
   text-align: center;
 }
-.reasons3-5{
+.cause{
   clear: both;
 }
-.third_reason{
+.causes{
   float: left;
-  width: 350px;
-  margin-right: 50px;
-  margin-left: 80px;
+  width: 33.33%;
   text-align: center;
-  background-color: blue;
 }
-.fourth_reason{
-  float: left;
-  width: 350px;
-  margin-right: 50px;
-  text-align: center;
-  background-color: green;
-}
-.fifth_reason{
-  float: left;
-  width: 380px;
-  margin-left: 10px;
-  text-align: center;
-  background-color: red;
-}
-
 ul>li{
   display: inline;
   padding: 50px;
@@ -92,49 +62,29 @@ ul>li{
 .hotel{
   clear: both;
 }
-.main_footer{
-  clear: both;
-}
-.container>p{
-  float: left;
-}
-.footer_social{
-  float: left;
-  text-align: center;
-}
-.footer_copyright{
-  float: left;
-}
+
 /*CSS для каталога*/
-body{
-  text-transform: uppercase;
-  /*text-align: center;*/
-}
+
 .main_navigation>ul>li{
   display: inline;
   padding: 50px;
 }
+.options{
+  float: left;
+}
 .price{
-  float: right;
-  display: inline;
-  width: 900px;
+  width: 50%;
   background-color: yellow;
-  margin-top: -115px;
 }
 .type_house{
-  clear: both;
-  width: 200px;
-  float: left;
+  width: 25%;
   border-color: red;
-  margin-top: -125px;
-  margin-left: 255px;
 }
 .infrastructure{
-  width: 80px;
+  width: 25%;
   border-color: red;
 }
 .sort>ul>li{
-  clear: both;
   display: inline;
   padding: 10px;
 }
@@ -173,4 +123,7 @@ body{
 .social_btn_vk, .social_btn_fb, .social_btn_youtube{
   background-color: #81b3d2;
   width: 50px;
+}
+.container>p{
+  float: left;
 }

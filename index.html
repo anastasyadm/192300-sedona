@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main_header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main_navigation">
           <ul>
             <li>
@@ -30,84 +30,88 @@
       </div>
     </header>
     <main>
-      <div class="picture">
-        <img src="img\Background.jpg" alt="Sedona">
-      </div>
-      <div class="welcome">
-        <b>Седона-небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p>Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</p>
-      </div>
-      <div class="first_reason">
-        <h2>Настоящий городок</h2>
-        <p> - №1 - </p>
-        <p>Седона не аттракцион для туристов там течет своя жизнь</p>
-      </div>
-      <div class="reason_picture">
-        <img src="img\first_reason.jpg">
-      </div>
-      <section class="advices">
-        <div class="advices_item_house">
-          <img src="img\house.png">
-          <div class="advices_name">
-            <h2>Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      <div class="container">
+        <div class="picture">
+          <img src="img\Background.jpg" alt="Sedona">
+        </div>
+        <div class="welcome">
+          <b>Седона-небольшой городок в Аризоне, заслуживающий большего!</b>
+          <p>Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+        <div class="reasons clearfix">
+          <div class="first_reason">
+            <h2>Настоящий городок</h2>
+            <p> - №1 - </p>
+            <p>Седона не аттракцион для туристов там течет своя жизнь</p>
+          </div>
+          <div class="reason_picture">
+            <img src="img\first_reason.jpg">
           </div>
         </div>
-        <div class="advices_item_eat">
-          <img src="img\eat.png">
-          <div class="advices_name">
-            <h2>Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочарутесь!</p>
+        <section class="advices clearfix">
+          <div class="advices_item">
+            <img src="img\house.png">
+            <div class="advices_name">
+              <h2>Жилье</h2>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
           </div>
+          <div class="advices_item">
+            <img src="img\eat.png">
+            <div class="advices_name">
+              <h2>Еда</h2>
+              <p>Всегда заказывайте фирменный бургер, вы не разочарутесь!</p>
+            </div>
+          </div>
+          <div class="advices_item">
+            <img src="img\present.png">
+            <div class="advices_name">
+              <h2>Сувениры</h2>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+        </section>
+        <div class="reasons clearfix">
+          <div class="second_reason">
+            <h2>Там есть мост дьявола</h2>
+            <p>№2</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="reason_picture">
+            <img src="img\second_reason.jpg">
+          </div>
+        <div>
+        <section class="cause clearfix">
+            <div class="third_reason causes">
+              <h2>Небольшая площадь</h2>
+              <p>№3</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="fourth_reason causes">
+              <h2>Красивая дорога</h2>
+              <p>№4</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="fifth_reason causes">
+              <h2>Мало туристов</h2>
+              <p>№5</p>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+        </section>
+        <div class="hotel">
+          <h3>Заинтересовались?</h3>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="search">
+            <a href="#">Поиск гостиницы в Седоне</a>
+            <img src="img\map.jpg" width="468" height="204">
+            <form>
+              <label for="check1">Дата заезда<input type="date" id="check1">
+              <label for="check2">Дата выезда<input type="date" id="check2">
+              <label for="check3">Взрослые<input type="range" min="0" max="100" id="check3">
+              <label for="check4">Дети<input type="range" min="0" max="100" id="check4">            <input type="submit" value="Найти">
+            </form>
         </div>
-        <div class="advices_item_present">
-          <img src="img\present.png">
-          <div class="advices_name">
-            <h2>Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
-          </div>
         </div>
-      </section>
-      <section class="reasons">
-        <div class="second_reason">
-          <h2>Там есть мост дьявола</h2>
-          <p>№2</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-        <div class="reason_picture">
-          <img src="img\second_reason.jpg">
-        </div>
-        <div class="reasons3-5">
-          <div class="third_reason">
-            <h2>Небольшая площадь</h2>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="fourth_reason">
-            <h2>Красивая дорога</h2>
-            <p>№4</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="fifth_reason">
-            <h2>Мало туристов</h2>
-            <p>№5</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-      </div>
-      </section>
-      <div class="hotel">
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div class="search">
-          <a href="#">Поиск гостиницы в Седоне</a>
-          <img src="img\map.jpg" width="468" height="204">
-          <form>
-            <label for="check1">Дата заезда<input type="date" id="check1">
-            <label for="check2">Дата выезда<input type="date" id="check2">
-            <label for="check3">Взрослые<input type="range" min="0" max="100" id="check3">
-            <label for="check4">Дети<input type="range" min="0" max="100" id="check4">            <input type="submit" value="Найти">
-          </form>
-      </div>
       </main>
       <footer class="main_footer">
         <div class="container">
