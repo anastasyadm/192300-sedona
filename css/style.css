@@ -3,6 +3,7 @@
   text-align: center;
   margin: 0 auto;
   min-width: 768px;
+  max-width: 1200px;
 }
 .clearfix:after{
   content: "";
@@ -21,18 +22,15 @@
   float: left;
 }
 .first_reason{
+  float: left;
   background-color: #81b3d2;
   color: white;
   width: 33%;
-  margin-left: 65px;
   text-align: center;
 }
 .reason_picture{
+  float: right;
   width: 67%;
-  background-color: red;
-}
-.advices{
-  clear: both;
 }
 .advices_item{
   float: left;
@@ -41,11 +39,15 @@
 }
 
 .second_reason{
+  float: right;
   background-color: #81b3d2;
   color: white;
   width: 33%;
-  margin-left: 65px;
   text-align: center;
+}
+.second_reason_picture{
+  float: left;
+  width: 67%;
 }
 .cause{
   clear: both;
@@ -69,19 +71,22 @@ ul>li{
   display: inline;
   padding: 50px;
 }
-.options{
-  float: left;
-}
 .price{
-  width: 50%;
+  float: right;
+  width: 60%;
   background-color: yellow;
+  box-sizing: border-box;
 }
 .type_house{
-  width: 25%;
+  text-align: left;
+  float: left;
+  width: 20%;
   border-color: red;
 }
 .infrastructure{
-  width: 25%;
+  text-align: left;
+  float: left;
+  width: 20%;
   border-color: red;
 }
 .sort>ul>li{
@@ -94,11 +99,14 @@ ul>li{
 }
 .name_hotel{
   float: left;
-  height: 200px;
+  background-color: yellow;
+}
+.price_and_type{
+  float: left;
+  background-color: blue;
 }
 .features{
   float: left;
-
 }
 .amara_resort>img{
   float: left;
@@ -118,12 +126,10 @@ ul>li{
   float: right;
 }
 .main_footer{
-  clear: both;
+  float: left;
+  width: 33.33%;
 }
 .social_btn_vk, .social_btn_fb, .social_btn_youtube{
   background-color: #81b3d2;
   width: 50px;
-}
-.container>p{
-  float: left;
 }
