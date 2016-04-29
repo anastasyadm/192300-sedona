@@ -47,6 +47,7 @@
 }
 .second_reason_picture{
   float: left;
+  width: 100%;
   width: 67%;
 }
 
@@ -106,6 +107,7 @@ ul>li{
 }
 .name_hotel{
   float: left;
+  width: 69%;
   background-color: yellow;
 }
 .price_and_type{
@@ -113,7 +115,7 @@ ul>li{
   background-color: blue;
 }
 .features{
-  float: right;;
+  float: left;
 }
 .amara_resort>img{
   float: left;
@@ -132,7 +134,11 @@ ul>li{
 .main_footer{
   width: 100%;
 }
-.main_footer>p{
+.hashtag{
+  float: left;
+  width: 33.33%;
+}
+.footer_social{
   float: left;
   width: 33.33%;
 }
