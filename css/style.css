@@ -49,9 +49,7 @@
   float: left;
   width: 67%;
 }
-.cause{
-  clear: both;
-}
+
 .causes{
   float: left;
   width: 33.33%;
@@ -61,9 +59,7 @@ ul>li{
   display: inline;
   padding: 50px;
 }
-.hotel{
-  clear: both;
-}
+
 
 /*CSS для каталога*/
 
@@ -81,21 +77,32 @@ ul>li{
   text-align: left;
   float: left;
   width: 20%;
-  border-color: red;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .infrastructure{
   text-align: left;
   float: left;
   width: 20%;
-  border-color: red;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .sort>ul>li{
+  float: left;
   display: inline;
   padding: 10px;
+}
+.sort>ul>li:last-child{
+  float: right;
 }
 .sort{
   background-color: red;
   margin-top: 55px;
+}
+.sort>a{
+  float: right;
 }
 .name_hotel{
   float: left;
@@ -106,30 +113,35 @@ ul>li{
   background-color: blue;
 }
 .features{
-  float: left;
+  float: right;;
 }
 .amara_resort>img{
   float: left;
-  clear: both;
 }
-.Desert_quail_inn>img{
+.desert_quail_inn>img{
   float: left;
-  clear: both;
 }
 
-.Villas_at_poco_diablo>img{
+.villas_at_poco_diablo>img{
   float: left;
-  clear: both;
 }
 
 .rating{
   float: right;
 }
 .main_footer{
+  width: 100%;
+}
+.main_footer>p{
   float: left;
   width: 33.33%;
 }
 .social_btn_vk, .social_btn_fb, .social_btn_youtube{
+  float: right;;
   background-color: #81b3d2;
-  width: 50px;
+  width: 33.33%;
+}
+.footer_copyright{
+  float: right;
+  width: 33.33%;
 }
