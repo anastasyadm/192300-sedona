@@ -32,6 +32,10 @@
   float: right;
   width: 67%;
 }
+.first_reason_picture>img{
+  width: 100%;
+  height: 100%;
+}
 .advices_item{
   float: left;
   width: 33.33%;
@@ -47,31 +51,32 @@
 }
 .second_reason_picture{
   float: left;
-  width: 100%;
   width: 67%;
 }
-
+.second_reason_picture>img{
+  width: 100%;
+  height: 100%;
+}
 .causes{
   float: left;
   width: 33.33%;
   text-align: center;
 }
-ul>li{
-  display: inline;
-  padding: 50px;
-}
-
 
 /*CSS для каталога*/
-
+.main_navigation{
+  width: 100%;
+  background-color: red;
+}
+.info, .foto, .logo, .map, .nav_hotel{
+  width: 20%;
+}
 .main_navigation>ul>li{
   display: inline;
-  padding: 50px;
 }
 .price{
   float: right;
   width: 60%;
-  background-color: yellow;
   box-sizing: border-box;
 }
 .type_house{
@@ -99,7 +104,6 @@ ul>li{
   float: right;
 }
 .sort{
-  background-color: red;
   margin-top: 55px;
 }
 .sort>a{
@@ -107,12 +111,11 @@ ul>li{
 }
 .name_hotel{
   float: left;
-  width: 69%;
-  background-color: yellow;
+  width: 75%;
+  text-align: left;
 }
 .price_and_type{
   float: left;
-  background-color: blue;
 }
 .features{
   float: left;
