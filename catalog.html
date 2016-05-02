@@ -10,7 +10,7 @@
   <body>
     <header class="main_header">
       <div class="container">
-        <nav class="main_navigation">
+        <nav class="main_navigation clearfix">
           <ul>
             <li class="info">
               <a href="#">Информация</a>
@@ -65,19 +65,21 @@
           <section class="price">
             <h2>Стоимость в сутки (Р)</h2>
             <div class="range_filter">
-                <div class="range_controls">
-                    <div class="scale"><div style="margin_left:10px;width:150px;" class="bar"></div></div>
-                    <div class="toggle min_toggle" style="left:40px;"></div>
-                    <div class="toggle max_toggle" style="left:180px;"></div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
                 </div>
-                <div class="price-controls">
-                    от <input class="min_price" type="text" value="0">
-                    до <input class="max_price" type="text" value="3 000">
+                <div class="range-toggle range-toggle-min">
                 </div>
-            </div>
-            <div>
-              <input type="range" min="0" id="check1"><label for="check1">Гостиница</label>
-              <input type="submit" value="Показать">
+                <div class="range-toggle range-toggle-max">
+                </div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
           </section>
         </form>
