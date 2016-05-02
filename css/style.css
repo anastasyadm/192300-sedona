@@ -1,3 +1,9 @@
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+}
 .container{
   text-transform: uppercase;
   text-align: center;
@@ -9,6 +15,14 @@
   content: "";
   display: table;
   clear: both;
+}
+.picture{
+  position: absolute;
+}
+.picture::after{
+  content: " ";
+  height: 50px;
+  background-image: url(img/decorative_el.png);
 }
 .first_reason>p{
   font-size: 15px;
@@ -26,6 +40,7 @@
   background-color: #81b3d2;
   color: white;
   width: 33%;
+  height: 256px;
   text-align: center;
 }
 .first_reason_picture{
@@ -47,6 +62,7 @@
   background-color: #81b3d2;
   color: white;
   width: 33%;
+  height: 256px;
   text-align: center;
 }
 .second_reason_picture{
@@ -61,18 +77,41 @@
   float: left;
   width: 33.33%;
   text-align: center;
+  background-color: #eeeeee;
 }
+.search{
+  width: 565px;
+  background-color: red;
+  background-image: url(img/map.jpg);
+}
+
+.found{
+  width: 455px;
+  height: 55px;
+  color: white;
+  border: none;
+  background-color: #81b3d2;
+}
+.found:hover{
+  background-color: #669ec0;
+  color: white;
+}
+.found:active{
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
 
 /*CSS для каталога*/
 .main_navigation{
   width: 100%;
-  background-color: red;
 }
 .info, .foto, .logo, .map, .nav_hotel{
   width: 20%;
 }
 .main_navigation>ul>li{
   display: inline;
+  padding: 10px;
 }
 .price{
   float: right;
@@ -114,11 +153,42 @@
   width: 75%;
   text-align: left;
 }
+.name_hotel>p:hover{
+  color: #81b3d2;
+}
+.name_hotel>p:active{
+  color: #b2b2b2;
+}
 .price_and_type{
   float: left;
 }
 .features{
   float: left;
+}
+.reserve, .more{
+  width: 140px;
+  height: 25px;
+  color: white;
+}
+.reserve{
+  background-color: #766357;
+}
+.reserve:hover{
+  background-color: #604e43;
+}
+.reserve:active{
+  color: #857871;
+  background-color: #503e33;
+}
+.more{
+  background-color: #81b3d2;
+}
+.more:hover{
+  background-color: #669ec0;
+}
+.more:active{
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 .amara_resort>img{
   float: left;

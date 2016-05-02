@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet'>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -101,14 +103,18 @@
         <div class="hotel">
           <h3>Заинтересовались?</h3>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <div class="search">
+          <div class="search clearfix">
             <a href="#">Поиск гостиницы в Седоне</a>
-            <img src="img\map.jpg" width="468" height="204">
-            <form>
-              <label for="check1">Дата заезда<input type="date" id="check1">
-              <label for="check2">Дата выезда<input type="date" id="check2">
-              <label for="check3">Взрослые<input type="range" min="0" max="100" id="check3">
-              <label for="check4">Дети<input type="range" min="0" max="100" id="check4">            <input type="submit" value="Найти">
+            <form class="log_in">
+              <div class="data">
+                <label for="check1">Дата заезда<input type="date" id="check1">
+                <label for="check2">Дата выезда<input type="date" id="check2">
+              </div>
+              <div class="people">
+                <label for="check3">Взрослые<input type="range" min="0" max="100" id="check3">
+                <label for="check4">Дети<input type="range" min="0" max="100" id="check4">
+              </div>
+              <input class="found" type="submit" value="Найти">
             </form>
         </div>
         </div>
