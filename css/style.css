@@ -17,12 +17,17 @@ a{
   clear: both;
 }
 .picture{
-  position: absolute;
+  position: relative;
 }
 .picture::after{
   content: " ";
-  height: 50px;
-  background-image: url(img/decorative_el.png);
+  height: 273px;
+  position: absolute;
+  width: 100%;
+  bottom: -200px;
+  left: 0;
+  z-index: 100;
+  background-image: url(img\decorative_el.png);
 }
 .first_reason>p{
   font-size: 15px;
@@ -79,11 +84,6 @@ a{
   text-align: center;
   background-color: #eeeeee;
 }
-.search{
-  width: 565px;
-  background-color: red;
-  background-image: url(img/map.jpg);
-}
 
 .found{
   width: 455px;
@@ -100,7 +100,33 @@ a{
   background-color: #5496bd;
   color: #88b6d1;
 }
-
+.title_search{
+  width: 565px;
+  height: 85px;
+  background-color: #766357;
+  color: white;
+}
+.search{
+  width: 565px;
+  height: 480px;
+  border: solid;
+}
+.people input{
+  width: 115px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.data input{
+  width: 345px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 40px;
+}
+.found{
+  margin: 50px;
+}
 
 /*CSS для каталога*/
 .main_navigation{
@@ -112,6 +138,9 @@ a{
 .main_navigation>ul>li{
   display: inline;
   padding: 10px;
+}
+.main_navigation li{
+  color: black;
 }
 .price{
   float: right;
