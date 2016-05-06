@@ -31,9 +31,14 @@ a{
   background-image: url(../img/decorative_el.png);
 }
 
-.welcome:after{
-  position: absolute;
-  z-index: 200;
+.welcome>b{
+  font-size: 21px;
+  line-height: 26px;
+}
+.welcome>p{
+  font-family: "PTSans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
 }
 .reason{
   float: left;
@@ -43,7 +48,11 @@ a{
   background-color: #81b3d2;
   color: white;
   width: 33%;
+  padding: 55px 60px 55px 60;
   text-align: center;
+}
+.first_reason>h2{
+  font-weight: bold;
 }
 .first_reason_picture{
   float: right;
@@ -115,12 +124,14 @@ a{
   background-image: url(../img/map.jpg);
 }
 .people input{
+  content: "\e802";
   width: 115px;
   height: 40px;
   font-size: 14px;
   line-height: 24px;
 }
 .data input{
+  content: "\e800";
   width: 345px;
   height: 38px;
   font-size: 14px;
@@ -137,6 +148,7 @@ a{
   border:solid;
   border-color: #e5e5e5;
 }
+
 .found{
   margin: 50px;
 }
@@ -146,6 +158,7 @@ a{
   width: 100%;
   font-weight: bold;
   color: #ffffff;
+  font-size: 14px;
 }
 .info, .foto, .logo, .map, .nav_hotel{
   width: 20%;
@@ -196,10 +209,13 @@ input[type=checkbox]:checked + label:before {
 .price{
   float: right;
   width: 40%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   color: white;
-  margin: 20px;
+  font-size: 16px;
+  margin-right: 70px;
 }
 .type_house{
   text-align: left;
@@ -218,11 +234,12 @@ input[type=checkbox]:checked + label:before {
   text-align: left;
   float: left;
   width: 20%;
-  margin-left: 50px;
+  margin-left: 70px;
   margin-top: 30px;
   padding: 0;
   border: none;
   color: white;
+  font-size: 16px;
 }
 .options{
   position: relative;
@@ -232,7 +249,6 @@ input[type=checkbox]:checked + label:before {
 .options legend{
   margin-bottom: 10px;
 }
-
 .sort>ul>li{
   float: left;
   display: inline;
@@ -279,10 +295,14 @@ input[type=checkbox]:checked + label:before {
 
 .name_hotel{
   float: left;
-  width: 75%;
+  width: 60%;
+  margin-left: 30px;
   text-align: left;
 }
 .name_hotel>p{
+  padding-bottom: 10px;
+  margin: 0px;
+  font-size: 21px;
   font-weight: bold;
 }
 .name_hotel>p:hover{
@@ -295,14 +315,22 @@ input[type=checkbox]:checked + label:before {
 }
 .price_and_type{
   float: left;
+  font-size: 14px;
+  padding-bottom: 10px;
 }
 .features{
   float: left;
+  margin-left: 30px;
+  margin-right: 6px;
 }
 .reserve, .more{
   width: 140px;
   height: 25px;
   color: white;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  padding: 5px 14px 5px 14px;
 }
 .reserve{
   background-color: #766357;
@@ -326,19 +354,22 @@ input[type=checkbox]:checked + label:before {
 }
 .amara_resort>img{
   float: left;
+  margin-left: 70px;
 }
 .desert_quail_inn>img{
   float: left;
+  margin-left: 70px;
 }
 
 .villas_at_poco_diablo>img{
   float: left;
+  margin-left: 70px;
 }
 
 .rating{
   float: right;
+  margin-right: 70px;
   color: #828282;
-  padding: 10px;
 }
 .rating_amara:before{
   content: "\2605\2605\2605\2605";
@@ -375,6 +406,8 @@ input[type=checkbox]:checked + label:before {
   height: 50px;
   background-color: #81b3d2;
   float: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 20px;
   padding-top: 15px;
@@ -424,7 +457,7 @@ input[type=checkbox]:checked + label:before {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
   cursor: pointer;
 }
