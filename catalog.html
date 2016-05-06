@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet'>
+    <link href="css/symbols-sedona/css/symbols-sedona.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet'>
   </head>
   <body>
     <header class="main_header">
@@ -35,7 +36,7 @@
       <div class="container clearfix">
         <form class="options clearfix">
           <fieldset class="infrastructure">
-            <legend>Инфраструктура</legend>
+            <legend>Инфраструктура:</legend>
               <ul>
                 <li>
                   <input type="checkbox" id="check1"><label for="check1">Бассейн</label>
@@ -49,16 +50,16 @@
               </ul>
           </fieldset>
           <fieldset class="type_house">
-            <legend>Тип жилья</legend>
+            <legend>Тип жилья:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" id="check1"><label for="check1">Гостиница</label>
+                  <input type="checkbox" id="check4"><label for="check4">Гостиница</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="check2"><label for="check2">Мотель</label>
+                  <input type="checkbox" id="check5"><label for="check5">Мотель</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="check3"><label for="check3">Апартаменты</label>
+                  <input type="checkbox" id="check6"><label for="check6">Апартаменты</label>
                 </li>
               </ul>
           </fieldset>
@@ -91,18 +92,20 @@
             <li>
               Сортировка:
             </li>
-            <li>
+            <li class="sort_price">
               <a href="#">По цене</a>
             </li>
-            <li>
+            <li class="sort_rating_and_type">
               <a href="#">По типу</a>
             </li>
-            <li>
+            <li class="sort_rating_and_type">
               <a href="#">По рейтингу</a>
             </li>
-            <li>
-              <a href="#"><img src="img\arrow_up.jpg" width="28" height="24"></a>
-              <a href="#"><img src="img\arrow_down.jpg" width="28" height="24"></a>
+            <li class="arrow">
+              <a href="#"></a>
+            </li>
+            <li class="arrow">
+              <a href="#"></a>
             </li>
           </ul>
         </section>
@@ -121,10 +124,6 @@
                 <a class="reserve" href="#">Забронировать</a>
               </div>
               <div class="rating">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
                 <p>Рейтинг:8,5</p>
               </div>
           </article>
@@ -142,8 +141,6 @@
                 <a class="reserve" href="#">Забронировать</a>
               </div>
               <div class="rating">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
                 <p>Рейтинг:8,9</p>
               </div>
           </article>
@@ -161,9 +158,6 @@
                 <a class="reserve" href="#">Забронировать</a>
               </div>
               <div class="rating">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
-                <img src="http://placehold.it/150x100" width="28" height="24" alt="Amara resort&spa">
                 <p>Рейтинг:9,2</p>
               </div>
           </div>

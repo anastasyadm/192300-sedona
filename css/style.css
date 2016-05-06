@@ -24,19 +24,12 @@ a{
   height: 273px;
   position: absolute;
   width: 100%;
-  bottom: -200px;
+  bottom: 0px;
   left: 0;
   z-index: 100;
-  background-image: url(img\decorative_el.png);
+  background-image: url(../img/decorative_el.png);
 }
-.first_reason>p{
-  font-size: 15px;
 
-}
-.first_reason>h2{
-  font-size: 15px;
-  text-align: center;
-}
 .reason{
   float: left;
 }
@@ -159,41 +152,116 @@ a{
 .main_navigation li{
   color: black;
 }
+.type_house ul, .infrastructure ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]+label{
+  line-height: 25px;
+  display: inline-block;
+  vertical-align: top;
+}
 
+input[type=checkbox]+label:before {
+  content: "\2610";
+  font-size: 20px;
+  font-family: "symbols-sedona";
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+input[type=checkbox]:checked + label:before {
+  content: "\2611";
+}
+.price>h2{
+  text-align: left;
+}
+.price{
+  float: right;
+  width: 40%;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
+}
 .type_house{
   text-align: left;
   float: left;
   width: 20%;
   margin: 0;
+  margin-top: 30px;
   padding: 0;
   border: none;
+  color: white;
 }
 .infrastructure{
   text-align: left;
   float: left;
   width: 20%;
-  margin: 0;
+  margin-left: 50px;
+  margin-top: 30px;
   padding: 0;
   border: none;
+  color: white;
 }
-.options:before{
-  background-image: url(img\filter_background.jpg);
+.options{
+  position: relative;;
+  width: 100%;
+  background-image: url(../img/filter_background.jpg);
+}
+.options legend{
+  margin-bottom: 10px;
 }
 
 .sort>ul>li{
   float: left;
   display: inline;
-  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
-.sort>ul>li:last-child{
+
+.arrow::before{
   float: right;
+  content: "\25b2";
+  content: "\25bc";
+  color: #cccccc;
 }
+.arrow:before:hover{
+  float: right;
+  color: #ffffff;
+}
+.arrow:before:active{
+  float: right;
+  color: #81b3d2;
+}
+
 .sort{
   margin-top: 55px;
 }
 .sort>a{
   float: right;
 }
+.sort_price:active{
+  color: #a3c7de;
+}
+.sort_rating_and_type{
+  color: #c7c7c7;
+  border-bottom: 1px dashed #c7c7c7;
+}
+.sort_rating_and_type:hover{
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+.sort_rating_and_type:active{
+  color: #ffffff;
+  border-bottom: 1px dashed #ffffff;
+}
+
 .name_hotel{
   float: left;
   width: 75%;
@@ -250,6 +318,13 @@ a{
 .rating{
   float: right;
 }
+.rating>p{
+  background-color: #f2f2f2;
+}
+.rating:before{
+  content: "\2605";
+  color: #81b3d2;
+}
 .main_footer{
   width: 100%;
 }
@@ -282,30 +357,21 @@ a{
   width: 33.33%;
 }
 .website_by{
-  background-image: url(img\footer.png);
+  background-image: url(../img/footer.png);
 }
 .website_by:hover{
-  background-image: url(img\footer_hover.png);
+  background-image: url(../img/footer_hover.png);
 }
 .website_by:active{
-  background-image: url(img\footer_active.png);
+  background-image: url(../img/footer_active.png);
 }
 /*filter*/
-.price{
-  float: right;
-  width: 40%;
-  box-sizing: border-box;
-  background-color: #81b3d2;
-}
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -315,10 +381,8 @@ a{
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
@@ -329,7 +393,6 @@ a{
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -342,10 +405,8 @@ a{
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
   outline: none;
@@ -353,30 +414,25 @@ a{
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -400,12 +456,10 @@ a{
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -415,6 +469,5 @@ a{
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
