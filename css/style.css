@@ -3,6 +3,7 @@ body{
 }
 a{
   text-decoration: none;
+  color: #000000;
 }
 .container{
   text-transform: uppercase;
@@ -16,13 +17,18 @@ a{
   display: table;
   clear: both;
 }
+.logo{
+  z-index: 200;
+  position: relative;
+}
 .picture{
   position: relative;
+  margin: -15px;
   width: 100%;
 }
 .picture::after{
   content: " ";
-  height: 273px;
+  height: 100px;
   position: absolute;
   width: 100%;
   bottom: 0px;
@@ -30,7 +36,14 @@ a{
   z-index: 100;
   background-image: url(../img/decorative_el.png);
 }
-
+.welcome{
+  z-index: 200;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
 .welcome>b{
   font-size: 21px;
   line-height: 26px;
@@ -40,23 +53,29 @@ a{
   font-size: 14px;
   line-height: 26px;
 }
-.reason{
+.reasons{
   float: left;
+  max-height: 256px;
+  background-color: #81b3d2;
 }
 .first_reason{
   float: left;
-  background-color: #81b3d2;
   color: white;
-  width: 33%;
-  padding: 55px 60px 55px 60;
+  width: 33.33%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
   text-align: center;
 }
 .first_reason>h2{
   font-weight: bold;
+  font-size: 21px;
 }
 .first_reason_picture{
   float: right;
-  width: 67%;
+  width: 66.66%;
 }
 .first_reason_picture>img{
   width: 100%;
@@ -66,18 +85,42 @@ a{
   float: left;
   width: 33.33%;
   text-align: center;
-}
 
+}
+.house{
+  background-position: center;
+  background-image: url(../img/house.png);
+  background-repeat: no-repeat;
+}
+.eat{
+  background-position: center;
+  background-image: url(../img/eat.png);
+  background-repeat: no-repeat;
+}
+.present{
+  background-position: center;
+  background-image: url(../img/present.png);
+  background-repeat: no-repeat;
+}
 .second_reason{
   float: right;
   background-color: #81b3d2;
   color: white;
-  width: 33%;
+  width: 33.33%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
   text-align: center;
+}
+.second_reason>h2{
+  font-weight: bold;
+  font-size: 21px;
 }
 .second_reason_picture{
   float: left;
-  width: 67%;
+  width: 66.66%;
 }
 .second_reason_picture>img{
   width: 100%;
@@ -87,9 +130,15 @@ a{
   float: left;
   width: 33.33%;
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-right: 65px;
+  padding-left: 65px;
+  box-sizing: border-box;
+}
+.cause{
   background-color: #eeeeee;
 }
-
 .found{
   width: 455px;
   height: 55px;
@@ -117,6 +166,7 @@ a{
   width: 565px;
   height: 480px;
   border: solid;
+  margin: auto;
   position: relative;
 }
 .search::before{
@@ -157,7 +207,6 @@ a{
 .main_navigation{
   width: 100%;
   font-weight: bold;
-  color: #ffffff;
   font-size: 14px;
 }
 .info, .foto, .logo, .map, .nav_hotel{
@@ -165,17 +214,19 @@ a{
 }
 .info, .foto{
   float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .map, .nav_hotel{
   float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .main_navigation>ul>li{
   display: inline;
 }
-.main_navigation li{
-  color: black;
-}
-.type_house ul, .infrastructure ul {
+
+.type_house ul, .infrastructure ul, .main_navigation ul{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -201,6 +252,7 @@ input[type=checkbox]+label:before {
 }
 input[type=checkbox]:checked + label:before {
   content: "\2611";
+  margin-right: 7px;
 }
 .price>h2{
   text-align: left;
@@ -242,6 +294,7 @@ input[type=checkbox]:checked + label:before {
   font-size: 16px;
 }
 .options{
+  margin: -15px;
   position: relative;
   width: 100%;
   background-image: url(../img/filter_background.jpg);
@@ -318,6 +371,15 @@ input[type=checkbox]:checked + label:before {
   font-size: 14px;
   padding-bottom: 10px;
 }
+.amara{
+  margin-left: 30px;
+}
+.desert{
+  margin-left: 55px;
+}
+.villas{
+  margin-left: 15px;
+}
 .features{
   float: left;
   margin-left: 30px;
@@ -356,30 +418,50 @@ input[type=checkbox]:checked + label:before {
   float: left;
   margin-left: 70px;
 }
+.amara_resort{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 .desert_quail_inn>img{
   float: left;
   margin-left: 70px;
 }
-
+..desert_quail_inn{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 .villas_at_poco_diablo>img{
   float: left;
   margin-left: 70px;
 }
-
+.villas_at_poco_diablo{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 .rating{
-  float: right;
+  font-family: "PTSans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  display: inline-block;
+  padding: 15px 5px 5px 15px;
   margin-right: 70px;
+  margin-bottom: 30px;
   color: #828282;
+  width: 110px;
+  height: 25px;
 }
 .rating_amara:before{
+  margin-top: 30px;
   content: "\2605\2605\2605\2605";
   color: #81b3d2;
 }
 .rating_desert:before{
+  margin-top: 30px;
   content: "\2605\2605";
   color: #81b3d2;
 }
 .rating_villas:before{
+  margin-top: 30px;
   content: "\2605\2605\2605";
   color: #81b3d2;
 }
@@ -412,6 +494,21 @@ input[type=checkbox]:checked + label:before {
   margin: 20px;
   padding-top: 15px;
 }
+.social_btn_tw{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/twitter.png);
+}
+.social_btn_fb{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/facebook.png);
+}
+.social_btn_youtube{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/youtube.png);
+}
 .social_btn:hover{
   background-color: #669ec0;
 }
@@ -423,20 +520,30 @@ input[type=checkbox]:checked + label:before {
   float: right;
   width: 33.33%;
 }
+.footer_copyright>p{
+  font-family: "PTSans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
 .website_by{
+  background-size: 113px 39px;
+  background-repeat: no-repeat;
   background-image: url(../img/footer.png);
 }
 .website_by:hover{
+  background-size: 113px 39px;
+  background-repeat: no-repeat;
   background-image: url(../img/footer_hover.png);
 }
 .website_by:active{
+  background-size: 113px 39px;
+  background-repeat: no-repeat;
   background-image: url(../img/footer_active.png);
 }
 /*filter*/
 
 .price-controls {
   position: relative;
-  height: 36px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -464,12 +571,12 @@ input[type=checkbox]:checked + label:before {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 50px;
   padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
+  width: 40px;
   margin: 0;
   color: inherit;
   font: inherit;
