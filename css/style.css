@@ -176,14 +176,18 @@ a{
   width: 565px;
   height: 85px;
   background-color: #766357;
+  box-sizing: border-box;
+  padding-top: 30px;
 }
 .title_search a{
   color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  padding-top: 30px;
 }
 .search{
   width: 565px;
   height: 480px;
-  border: solid;
   margin: auto;
   position: relative;
 }
@@ -191,22 +195,56 @@ a{
   position: relative;
   background-image: url(../img/map.jpg);
 }
+.found{
+  margin: 50px;
+  font-size: 21px;
+  font-weight: bold;
+}
+.hotel{
+  margin-top: 50px;
+}
+.hotel>p{
+  margin-left: 370px;
+  margin-right: 370px;
+  margin-bottom: 50px;
+  font-family: "PTSans Regular", sans-serif;
+  font-size: 14px;
+}
+.hotel>h3{
+  font-weight: bold;
+  font-size: 30px;
+}
 .people input{
+  float: right;
   content: "\e802";
   width: 115px;
   height: 40px;
   font-size: 14px;
   line-height: 24px;
+  margin-left: 40px;
 }
+
+.data{
+  padding-top: 55px;
+}
+.data label, .people label{
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 55px;
+}
+
 .data input{
+  float: right;
   content: "\e800";
   width: 345px;
   height: 38px;
   font-size: 14px;
   line-height: 24px;
-  margin: 30px;
+  margin-bottom: 30px;
   background-color: #f2f2f2;
   border: none;
+  margin-left: 20px;
 }
 .data input:hover{
   background-color: #ebebeb;
@@ -215,10 +253,6 @@ a{
   background-color: #ffffff;
   border:solid;
   border-color: #e5e5e5;
-}
-
-.found{
-  margin: 50px;
 }
 
 /*CSS для каталога*/
@@ -297,7 +331,7 @@ input[type=checkbox]:checked + label:before {
 .range_filter {
   height: 35px;
   width: 320px;
-  margin: 10px 150px; /* для демо */
+  margin: 10px 150px;
 
   color: #ffffff;
   text-transform: uppercase;
