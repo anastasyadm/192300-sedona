@@ -634,8 +634,7 @@ input[type=checkbox]:checked + label:before {
 }
 .footer_social{
   float: left;
-  width: 33.33%;
-  text-align: center;
+  margin-left: 120px;
   margin-top: 35px;
 }
 .social_btn{
@@ -643,10 +642,12 @@ input[type=checkbox]:checked + label:before {
   height: 50px;
   background-color: #81b3d2;
   float: right;
+  margin: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-right: 5px;
+
 }
 .social_btn_tw{
   background-position: center;
@@ -673,17 +674,24 @@ input[type=checkbox]:checked + label:before {
 .footer_copyright{
   float: right;
   width: 33.33%;
+  box-sizing: border-box;
 }
 .footer_copyright>p{
+  float: left;
   font-family: "PTSans Regular", sans-serif;
   font-size: 14px;
-  margin-top: 45px;
+  margin-top: 50px;
+  margin-left: 80px;
 }
 .footer_copyright>a{
   width: 113px;
   height: 39px;
-  float: right;
+  margin-top: 40px;
+  padding: 0;
+  margin-right: 120px;
+  background-position: center;
   display: inline-block;
+  box-sizing: border-box;
 }
 .website_by{
   background-repeat: no-repeat;
