@@ -504,11 +504,12 @@ input[type=checkbox]:checked + label:before {
 }
 .arrow_up>a:before:hover{
   color: #ffffff;
+  background-color: blue;
 }
 .arrow_up>a:before:active{
   color: #81b3d2;
 }
-.arrow_down>a{
+/*.arrow_down>a{
   height: 11px;
   width: 10px;
 }
@@ -523,6 +524,15 @@ input[type=checkbox]:checked + label:before {
   width: 10px;
   margin-left: 90px;
   margin-top: 5px;
+}*/
+.arrow>a{
+  display: inline-block;
+  width: 15px;
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 23px;
+  line-height: 20px;
+  background-color: green;
 }
 .sort{
   margin-top: 50px;
