@@ -225,7 +225,7 @@ a{
   height: 40px;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 40px;
+  margin-left: 29px;
 }
 
 .data{
@@ -237,7 +237,6 @@ a{
   font-weight: bold;
   margin-left: 55px;
 }
-
 .data input{
   float: right;
   content: "\e800";
@@ -484,7 +483,6 @@ input[type=checkbox]:checked + label:before {
   display: inline;
   margin-left: 30px;
   margin-bottom: 30px;
-
 }
 .sort>ul>li:nth-child(6){
   float: right;
@@ -494,26 +492,38 @@ input[type=checkbox]:checked + label:before {
   float: right;
   margin-right: 70px;
 }
-.arrow_up::before{
+.arrow_up>a::before{
   float: right;
   content: "\25b2";
   color: #cccccc;
-  margin-right: -90px;
 }
-.arrow_down::before{
+.arrow_down>a::before{
   float: right;
   content: "\25bc";
   color: #cccccc;
-  margin-right: 85px;
-
 }
-.arrow>a:before:hover{
+.arrow_up>a:before:hover{
   color: #ffffff;
 }
-.arrow>a:before:active{
+.arrow_up>a:before:active{
   color: #81b3d2;
 }
-
+.arrow_down>a{
+  height: 11px;
+  width: 10px;
+}
+.arrow_up>a{
+  height: 20px;
+  width: 10px;
+  margin-left: 90px;
+  margin-top: 5px;
+}
+.arrow_down>a{
+  height: 20px;
+  width: 10px;
+  margin-left: 90px;
+  margin-top: 5px;
+}
 .sort{
   margin-top: 50px;
   margin-left: -15px;
@@ -540,6 +550,7 @@ input[type=checkbox]:checked + label:before {
 }
 .sort_price>a:active{
   color: #a3c7de;
+  border-bottom: 1px solid #000000;
 }
 .sort_rating_and_type{
   color: #c7c7c7;
