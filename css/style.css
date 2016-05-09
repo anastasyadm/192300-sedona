@@ -4,7 +4,6 @@ body{
 }
 a{
   text-decoration: none;
-  color: #000000;
 }
 .container{
   text-transform: uppercase;
@@ -191,10 +190,7 @@ a{
   margin: auto;
   position: relative;
 }
-.search::before{
-  position: relative;
-  background-image: url(../img/map.jpg);
-}
+
 .found{
   margin: 50px;
   font-size: 21px;
@@ -202,6 +198,14 @@ a{
 }
 .hotel{
   margin-top: 50px;
+  padding-bottom: 73px;
+  position: relative;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url(../img/map.jpg);
+}
+.log_in{
+  background-color: white;
 }
 .hotel>p{
   margin-left: 370px;
@@ -274,10 +278,20 @@ a{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.main_navigation>ul>li>a{
+    color: #000000;
+}
 .main_navigation>ul>li{
   display: inline;
 }
-
+.main_navigation>ul>li>a:hover{
+    color: #81b3d2;
+    font-weight: bold;
+  }
+.main_navigation>ul>li>a:active{
+  color: #b2b2b2;
+  font-weight: bold;
+}
 .type_house ul, .infrastructure ul, .main_navigation ul{
   margin: 0;
   padding: 0;
@@ -315,9 +329,9 @@ input[type=checkbox]:checked + label:before {
   box-sizing: border-box;
   position: relative;
   color: white;
-  margin-right: 70px;
+  margin-right: 60px;
   margin-top: 15px;
-  margin-left: 90px;
+  margin-left: 100px;
 }
 /*filter*/
 /*_________________________________________________*/
@@ -354,13 +368,15 @@ input[type=checkbox]:checked + label:before {
   display: inline-block;
   font-size: 14px;
   line-height: 21px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   vertical-align: top;
   cursor: pointer;
 }
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 55px;
+  padding-left: 35px;
 }
 .price-controls input {
   width: 30px;
@@ -482,32 +498,47 @@ input[type=checkbox]:checked + label:before {
   float: right;
   content: "\25b2";
   color: #cccccc;
+  margin-right: -90px;
 }
 .arrow_down::before{
   float: right;
   content: "\25bc";
   color: #cccccc;
+  margin-right: 85px;
+
 }
-.arrow:before:hover{
+.arrow>a:before:hover{
   color: #ffffff;
 }
-.arrow:before:active{
+.arrow>a:before:active{
   color: #81b3d2;
 }
 
 .sort{
-  margin-top: 55px;
+  margin-top: 50px;
+  margin-left: -15px;
 }
 .sort>ul>li:first-child{
   font-weight: bold;
   font-size: 21px;
 }
-.sort>a{
+.sort>ul>li>a{
+  color: #b2b2b2;
   float: right;
   font-size: 12px;
   font-family: "PTSans Regular", sans-serif;
 }
-.sort_price:active{
+.sort>ul>li>a:hover{
+  color: #a3c7de;
+}
+.sort>ul>li>a:active{
+  color: #000000;
+}
+.sort>ul>li{
+  font-size: 12px;
+  font-family: "PTSans Regular", sans-serif;
+}
+.sort_price>a:active{
   color: #a3c7de;
 }
 .sort_rating_and_type{
@@ -614,45 +645,55 @@ input[type=checkbox]:checked + label:before {
   margin-left: 60px;
 }
 .desert_quail_inn{
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-top: 55px;
 }
 .villas_at_poco_diablo>img{
   float: left;
   margin-left: 60px;
 }
 .villas_at_poco_diablo{
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 .rating{
   font-family: "PTSans Regular", sans-serif;
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
-  margin-right: 70px;
-  margin-bottom: 30px;
   color: #828282;
-  width: 110px;
-  height: 25px;
+  margin-left: 60px;
+
 }
 .rating_amara:before{
-  margin-top: 30px;
+  font-size: 25px;
+  margin-top: 25px;
+  margin-right: 30px;
   content: "\2605\2605\2605\2605";
   color: #81b3d2;
 }
 .rating_desert:before{
-  margin-top: 30px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-right: 30px;
   content: "\2605\2605";
   color: #81b3d2;
 }
 .rating_villas:before{
+  font-size: 25px;
   margin-top: 30px;
+  margin-right: 30px;
   content: "\2605\2605\2605";
   color: #81b3d2;
 }
 .rating>p{
   background-color: #f2f2f2;
+  width: 110px;
+  height: 25px;
+  padding-top: 3px;
+  box-sizing: border-box;
+  margin-right: 70px;
+  margin-top: 40px;
 }
 
 .main_footer{
@@ -665,6 +706,7 @@ input[type=checkbox]:checked + label:before {
   font-size: 21px;
   text-align: center;
   margin-top: 45px;
+  margin-bottom: 55px;
 }
 .footer_social{
   float: left;
@@ -715,14 +757,15 @@ input[type=checkbox]:checked + label:before {
   font-family: "PTSans Regular", sans-serif;
   font-size: 14px;
   margin-top: 50px;
-  margin-left: 80px;
+  margin-left: 85px;
 }
 .footer_copyright>a{
   width: 113px;
   height: 39px;
   margin-top: 40px;
   padding: 0;
-  margin-right: 120px;
+  margin-right: 110px;
+  margin-left: 5px;
   background-position: center;
   display: inline-block;
   box-sizing: border-box;
