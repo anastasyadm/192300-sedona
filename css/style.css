@@ -51,7 +51,7 @@ a{
   line-height: 26px;
 }
 .welcome>p{
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
 }
@@ -101,7 +101,7 @@ a{
 }
 .advices_name>p{
   padding-top: 10px;
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular","Arial", sans-serif;
   font-size: 13px;
 }
 .house{
@@ -211,7 +211,7 @@ a{
   margin-left: 370px;
   margin-right: 370px;
   margin-bottom: 50px;
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular", "Arial",sans-serif;
   font-size: 14px;
 }
 .hotel>h3{
@@ -533,7 +533,7 @@ input[type=checkbox]:checked + label:before {
   color: #b2b2b2;
   float: right;
   font-size: 12px;
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular","Arial", sans-serif;
 }
 .sort>ul>li>a:hover{
   color: #a3c7de;
@@ -543,7 +543,7 @@ input[type=checkbox]:checked + label:before {
 }
 .sort>ul>li{
   font-size: 12px;
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular","Arial", sans-serif;
 }
 .sort_price>a:active{
   color: #a3c7de;
@@ -584,7 +584,7 @@ input[type=checkbox]:checked + label:before {
 }
 .price_and_type{
   float: left;
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular","Arial", sans-serif;
   font-size: 14px;
   padding-bottom: 10px;
 }
@@ -665,7 +665,7 @@ input[type=checkbox]:checked + label:before {
   margin-top: 25px;
 }
 .rating{
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular","Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
@@ -762,7 +762,7 @@ input[type=checkbox]:checked + label:before {
 }
 .footer_copyright>p{
   float: left;
-  font-family: "PTSans Regular", sans-serif;
+  font-family: "PTSans Regular","Arial", sans-serif;
   font-size: 14px;
   margin-top: 50px;
   margin-left: 85px;
