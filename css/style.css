@@ -219,35 +219,93 @@ a{
   font-size: 30px;
 }
 .people input{
-  float: right;
+  float: left;
   content: "\e802";
-  width: 115px;
+  width: 85px;
   height: 40px;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 29px;
-}
+  /*margin-left: 29px;
+  padding-right: 20px;
+  padding-left: 10px;*/
 
+  background-color: #f2f2f2;
+  border: none;
+}
 .data{
   padding-top: 55px;
 }
-.data label, .people label{
+.data label{
   float: left;
   font-size: 14px;
-  font-weight: bold;
   margin-left: 55px;
+  padding-right: 15px;
+  font-weight: bold;
+  background-color: yellow;
 }
-.data input{
-  float: right;
+.people label{
+  float: left;
+  font-size: 14px;
+  margin-left: 55px;
+  padding-right: 35px;
+  font-weight: bold;
+}
+.people label:last-child{
+  float: left;
+  font-size: 14px;
+  margin-left: 55px;
+  padding-right: 35px;
+  font-weight: bold;
+  background-color: red;
+}
+.data input[type="text"]{
+  display: block;
   content: "\e800";
-  width: 345px;
+  width: 255px;
   height: 38px;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 30px;
   background-color: #f2f2f2;
   border: none;
-  margin-left: 20px;
+  margin-bottom: 30px;
+  /*
+  margin-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 10px;
+  margin-left: 20px;*/
+}
+.arrive{
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: -69px;
+  margin-right: 125px;
+  border: none;
+  background-color: blue;
+}
+.depart{
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: -69px;
+  margin-right: 125px;
+  border: none;
+  background-color: green;
+}
+.child{
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-top: 50px;
+  background-color: orange;
+}
+.adults{
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: red;
 }
 .data input:hover{
   background-color: #ebebeb;
@@ -256,6 +314,7 @@ a{
   background-color: #ffffff;
   border:solid;
   border-color: #e5e5e5;
+
 }
 
 /*CSS для каталога*/
@@ -789,4 +848,65 @@ input[type=checkbox]:checked + label:before {
 .website_by:active{
   background-repeat: no-repeat;
   background-image: url(../img/footer_active.png);
+}
+
+/*sprite*/
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-celendar {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-celendar_active {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -47px;
+}
+
+.sprite-celendar_hover {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -79px;
+}
+
+.sprite-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -116px;
+}
+
+.sprite-minus_active {
+    width: 12px;
+    height: 3px;
+    background-position: -5px -134px;
+}
+
+.sprite-minus_hover {
+    width: 12px;
+    height: 3px;
+    background-position: -5px -147px;
+}
+
+.sprite-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -165px;
+}
+
+.sprite-plus_active {
+    width: 11px;
+    height: 11px;
+    background-position: -5px -191px;
+}
+
+.sprite-plus_hover {
+    width: 11px;
+    height: 11px;
+    background-position: -5px -212px;
 }
