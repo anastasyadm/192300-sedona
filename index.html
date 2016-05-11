@@ -108,18 +108,24 @@
               <div class="data">
                 <label  for="check1">Дата заезда:</label>
                 <input type="text" id="check1">
-                <button class="arrive" type="button"></button>
+                <button class="calendar_arrive" type="button"></button>
                 <label  for="check2">Дата выезда:</label>
                 <input type="text" id="check2">
-                <button class="depart" type="button"></button>
+                <button class="calendar_depart" type="button"></button>
               </div>
               <div class="people">
-                <label class="adults_label" for="check3">Взрослые:</label>
-                <input type="text"  id="check3">
-                <button class="adults" type="button"></button>
-                <label class="child_label" for="check4">Дети:</label>
-                <input type="text" id="check4">
-                <button class="child" type="button"></button>
+                <div class="adults">
+                  <label class="adults_label" for="check3">Взрослые:</label>
+                  <input type="text"  id="check3">
+                  <button class="plus1" type="button"></button>
+                  <button class="minus1" type="button"></button>
+                </div>
+                <div class="child">
+                  <label class="child_label" for="check4">Дети:</label>
+                  <input type="text" id="check4">
+                  <button class="plus2" type="button"></button>
+                  <button class="minus2" type="button"></button>
+                </div>
               </div>
               <input class="found" type="submit" value="Найти">
             </form>

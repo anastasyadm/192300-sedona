@@ -225,6 +225,7 @@ a{
   height: 40px;
   font-size: 14px;
   line-height: 24px;
+
   /*margin-left: 29px;
   padding-right: 20px;
   padding-left: 10px;*/
@@ -243,20 +244,27 @@ a{
   font-weight: bold;
   background-color: yellow;
 }
-.people label{
+.adults label{
   float: left;
   font-size: 14px;
   margin-left: 55px;
   padding-right: 35px;
   font-weight: bold;
+  background-color: green;
 }
-.people label:last-child{
+.child label{
   float: left;
   font-size: 14px;
-  margin-left: 55px;
+  margin-top: -93px;
+  margin-left: 290px;
   padding-right: 35px;
   font-weight: bold;
-  background-color: red;
+  background-color: orange;
+}
+.child input{
+  float: right;
+  margin-top: -95px;
+  margin-right: 120px;
 }
 .data input[type="text"]{
   display: block;
@@ -274,7 +282,14 @@ a{
   padding-left: 10px;
   margin-left: 20px;*/
 }
-.arrive{
+.adults label, .adults button{
+  display: inline;
+}
+.child label, .child button{
+  display: inline;
+}
+
+.calendar_arrive{
   float: right;
   width: 40px;
   height: 40px;
@@ -283,7 +298,7 @@ a{
   border: none;
   background-color: blue;
 }
-.depart{
+.calendar_depart{
   float: right;
   width: 40px;
   height: 40px;
@@ -292,19 +307,45 @@ a{
   border: none;
   background-color: green;
 }
-.child{
+.minus1{
   float: right;
   width: 40px;
   height: 40px;
   border: none;
-  margin-top: 50px;
-  background-color: orange;
+  margin-top: 55px;
+  margin-left: 90px;
+  margin-right: 90px;
+  background-color: green;
 }
-.adults{
+.minus2{
   float: right;
   width: 40px;
   height: 40px;
   border: none;
+  margin-top: 55px;
+  margin-left: 150px;
+  margin-right: 90px;
+  background-color: green;
+}
+.plus1{
+  display: inline;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 0px;
+  margin-top: -13px;
+  margin-right: 145px;
+  background-color: red;
+}
+.plus2{
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 0px;
+  margin-top: -43px;
+  margin-right: 145px;
   background-color: red;
 }
 .data input:hover{
