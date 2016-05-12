@@ -200,6 +200,7 @@ a{
 .google_map{
   position: absolute;
   z-index: 1;
+  margin-top:85px;
 }
 .log_in{
   background-color: white;
