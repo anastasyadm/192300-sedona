@@ -19,12 +19,12 @@
               <a href="#">Фото и видео</a>
             </li>
             <li class="logo">
-              <a href="https://htmlacademy.ru/"><img src="img/Logo.png" width="138" height="70" alt="Sedona"></a>
-            </li>
-            <li class="map">
-              <a href="#">Гостиницы</a>
+              <a href="index.html"><img src="img/Logo.png" width="138" height="70" alt="Sedona"></a>
             </li>
             <li class="nav_hotel">
+              <a href="catalog.html">Гостиницы</a>
+            </li>
+            <li class="map">
               <a href="#">Карта штата</a>
             </li>
           </ul>
@@ -98,6 +98,10 @@
             </div>
         </section>
         <div class="hotel">
+          <div class="google_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565752865!2d-111.83015805709337!3d34.854443815618865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1463078090207" width="1200" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </iframe>
+          </div>
           <h3>Заинтересовались?</h3>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <div class="search clearfix">
@@ -106,25 +110,29 @@
             </div>
             <form class="log_in">
               <div class="data">
-                <label  for="check1">Дата заезда:</label>
-                <input type="text" id="check1">
-                <button class="calendar_arrive" type="button"></button>
-                <label  for="check2">Дата выезда:</label>
-                <input type="text" id="check2">
-                <button class="calendar_depart" type="button"></button>
+                <div class="date_arrive">
+                  <label for="check1">Дата заезда:</label>
+                  <input type="text" id="check1">
+                  <button class="calendar_arrive" type="button"></button>
+                </div>
+                <div class="date_depature">
+                  <label for="check2">Дата выезда:</label>
+                  <input type="text" id="check2">
+                  <button class="calendar_depart" type="button"></button>
+                </div>
               </div>
               <div class="people">
                 <div class="adults">
                   <label class="adults_label" for="check3">Взрослые:</label>
+                  <button class="plus_adults" type="button"></button>
                   <input type="text"  id="check3">
-                  <button class="plus1" type="button"></button>
-                  <button class="minus1" type="button"></button>
+                  <button class="minus_adults" type="button"></button>
                 </div>
                 <div class="child">
                   <label class="child_label" for="check4">Дети:</label>
+                  <button class="plus_child" type="button"></button>
                   <input type="text" id="check4">
-                  <button class="plus2" type="button"></button>
-                  <button class="minus2" type="button"></button>
+                  <button class="minus_child" type="button"></button>
                 </div>
               </div>
               <input class="found" type="submit" value="Найти">

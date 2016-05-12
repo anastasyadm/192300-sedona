@@ -189,6 +189,7 @@ a{
   height: 480px;
   margin: auto;
   position: relative;
+  z-index: 100;
 }
 
 .found{
@@ -196,16 +197,13 @@ a{
   font-size: 21px;
   font-weight: bold;
 }
-.hotel{
-  margin-top: 50px;
-  padding-bottom: 73px;
-  position: relative;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-image: url(../img/map.jpg);
+.google_map{
+  position: absolute;
+  z-index: 1;
 }
 .log_in{
   background-color: white;
+  width: 100%;
 }
 .hotel>p{
   margin-left: 370px;
@@ -219,144 +217,113 @@ a{
   font-size: 30px;
 }
 .people input{
-  float: left;
-  content: "\e802";
   width: 85px;
   height: 40px;
   font-size: 14px;
   line-height: 24px;
-
-  /*margin-left: 29px;
-  padding-right: 20px;
-  padding-left: 10px;*/
-
   background-color: #f2f2f2;
   border: none;
 }
 .data{
   padding-top: 55px;
 }
+.date_arrive, .date_depature{
+  background-color: red;
+  margin-bottom: 30px;
+  padding-right: 25px;
+}
 .data label{
-  float: left;
+  display: inline;
   font-size: 14px;
-  margin-left: 55px;
-  padding-right: 15px;
+  margin-right: 15px;
   font-weight: bold;
+  margin-left: 0;
   background-color: yellow;
 }
-.adults label{
-  float: left;
-  font-size: 14px;
-  margin-left: 55px;
-  padding-right: 35px;
-  font-weight: bold;
-  background-color: green;
-}
-.child label{
-  float: left;
-  font-size: 14px;
-  margin-top: -93px;
-  margin-left: 290px;
-  padding-right: 35px;
-  font-weight: bold;
-  background-color: orange;
-}
-.child input{
-  float: right;
-  margin-top: -95px;
-  margin-right: 120px;
-}
 .data input[type="text"]{
-  display: block;
-  content: "\e800";
-  width: 255px;
-  height: 38px;
+  display: inline;
+  width: 315px;
+  height: 40px;
   font-size: 14px;
   line-height: 24px;
   background-color: #f2f2f2;
   border: none;
-  margin-bottom: 30px;
-  /*
-  margin-bottom: 30px;
-  padding-right: 50px;
   padding-left: 10px;
-  margin-left: 20px;*/
-}
-.adults label, .adults button{
-  display: inline;
-}
-.child label, .child button{
-  display: inline;
-}
+  box-sizing: border-box;
 
+}
 .calendar_arrive{
-  float: right;
   width: 40px;
   height: 40px;
-  margin-top: -69px;
-  margin-right: 125px;
   border: none;
-  background-color: blue;
+  background-color: #f2f2f2;
+  display: inline;
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px 0px;
 }
 .calendar_depart{
-  float: right;
-  width: 40px;
-  height: 40px;
-  margin-top: -69px;
-  margin-right: 125px;
-  border: none;
-  background-color: green;
-}
-.minus1{
-  float: right;
   width: 40px;
   height: 40px;
   border: none;
-  margin-top: 55px;
-  margin-left: 90px;
-  margin-right: 90px;
-  background-color: green;
-}
-.minus2{
-  float: right;
-  width: 40px;
-  height: 40px;
-  border: none;
-  margin-top: 55px;
-  margin-left: 150px;
-  margin-right: 90px;
-  background-color: green;
-}
-.plus1{
   display: inline;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border: none;
-  margin-left: 0px;
-  margin-top: -13px;
-  margin-right: 145px;
-  background-color: red;
+  position: absolute;
+  background-color: #f2f2f2;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px 0px;
 }
-.plus2{
-  float: right;
-  width: 40px;
-  height: 40px;
-  border: none;
-  margin-left: 0px;
-  margin-top: -43px;
-  margin-right: 145px;
-  background-color: red;
+.people{
+  background-color: blue;
 }
-.data input:hover{
-  background-color: #ebebeb;
-}
-.data input:active{
-  background-color: #ffffff;
-  border:solid;
-  border-color: #e5e5e5;
+.adults, .child{
+  width: 110px;
+  font-size: 0;
+  width: 50%;
+  display: inline;
 
 }
+.adults label, .child label{
+  font-size: 14px;
+  top:-10px;
+  font-weight: bold;
+  background-color: yellow;
+}
+.adults label{
+  margin-left: 5px;
+  padding-right: 40px;
+}
+.child label{
+  margin-left: 50px;
+  padding-right: 25px;
+}
+.adults button, .child button{
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  border: none;
+  background-color: #f2f2f2;
+  display: inline;
+}
+.adults button:first-child{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+.adults input, .child input{
+  width: 40px;
+  height: 40px;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  position:relative;
+  top: -12px;
+  box-sizing: border-box;
+}
+
 
 /*CSS для каталога*/
 .main_navigation{
@@ -806,6 +773,10 @@ input[type=checkbox]:checked + label:before {
 
 .main_footer{
   width: 100%;
+  z-index: 100;
+  position: relative;
+  margin-top:75px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .hashtag{
   float: left;
