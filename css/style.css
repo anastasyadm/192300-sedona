@@ -229,7 +229,6 @@ a{
   padding-top: 55px;
 }
 .date_arrive, .date_depature{
-  background-color: red;
   margin-bottom: 30px;
   padding-right: 25px;
 }
@@ -239,7 +238,6 @@ a{
   margin-right: 15px;
   font-weight: bold;
   margin-left: 0;
-  background-color: yellow;
 }
 .data input[type="text"]{
   display: inline;
@@ -250,11 +248,21 @@ a{
   background-color: #f2f2f2;
   border: none;
   padding-left: 10px;
+  padding-right: 2px;
   box-sizing: border-box;
-
 }
-.people{
-  background-color: blue;
+.data input:hover{
+  background-color: #ebebeb;
+}
+.data input:focus{outline:none;}
+.data button,
+button:active,
+button:focus {
+    outline: none;
+}
+.data input:active{
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 .adults, .child{
   font-size: 0;
@@ -271,7 +279,6 @@ a{
   font-size: 14px;
   top:0px;
   font-weight: bold;
-  background-color: yellow;
 }
 .adults label{
   margin-left: 5px;
@@ -294,7 +301,21 @@ a{
   background-color: #f2f2f2;
   display: inline;
 }
-
+.people button,
+button:active,
+button:focus {
+    outline: none;
+}
+.people input:hover{
+  background-color: #ebebeb;
+}
+.people input:focus{
+  outline:none;
+}
+.people input:active{
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
 .adults input, .child input{
   width: 40px;
   height: 40px;
