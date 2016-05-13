@@ -253,41 +253,23 @@ a{
   box-sizing: border-box;
 
 }
-.calendar_arrive{
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: #f2f2f2;
-  display: inline;
-  position: absolute;
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -10px 0px;
-}
-.calendar_depart{
-  width: 40px;
-  height: 40px;
-  border: none;
-  display: inline;
-  position: absolute;
-  background-color: #f2f2f2;
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -10px 0px;
-}
 .people{
   background-color: blue;
 }
 .adults, .child{
-  width: 110px;
   font-size: 0;
   width: 50%;
   display: inline;
 
 }
 .adults label, .child label{
+  display: inline;
+  vertical-align: top;
+  width: auto;
+  padding: 10px 0;
+  padding-right: 30px;
   font-size: 14px;
-  top:-10px;
+  top:0px;
   font-weight: bold;
   background-color: yellow;
 }
@@ -300,28 +282,30 @@ a{
   padding-right: 25px;
 }
 .adults button, .child button{
+  display: inline;
+  vertical-align: top;
   width: 40px;
+  padding: 6px;
+  font-size: 14px;
+  text-align: center;
   height: 40px;
   top: 0px;
   border: none;
   background-color: #f2f2f2;
   display: inline;
 }
-.adults button:first-child{
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -10px -10px;
-}
+
 .adults input, .child input{
   width: 40px;
   height: 40px;
+  vertical-align: top;
+  text-align: center;
   display: inline;
   margin: 0;
-  padding: 0;
-  font-size: 18px;
+  padding: 6;
+  font-size: 14px;
   line-height: 20px;
   position:relative;
-  top: -12px;
   box-sizing: border-box;
 }
 
@@ -864,62 +848,114 @@ input[type=checkbox]:checked + label:before {
 }
 
 /*sprite*/
+.calendar_arrive, .calendar_depart{
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: inline;
+  position: absolute;
+  background-color: #f2f2f2;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+.calendar_arrive:hover, .calendar_depart:hover{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -72px;
+}
+.calendar_arrive:active, .calendar_depart:active{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -70px -9px;
+}
+.plus_adults, .plus_child{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -70px -65px;
+}
+.plus_adults:hover, .plus_child:hover{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -130px -3px;
+}
+.plus_adults:active, .plus_child:active{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -70px -107px;
+}
+.minus_adults,.minus_child{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -128px -50px;
+}
+.minus_adults:hover, .minus_child:hover{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -5px -153px;
+}
+.minus_adults:active, .minus_child:active{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -118px -103px;
+}
+
 .sprite {
-    background-image: url(../img/sprite.png);
+    background-image: url(..img/sprite.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-celendar {
+.sprite_celendar {
     width: 21px;
     height: 22px;
-    background-position: -10px -10px;
+    background-position: -20px -20px;
 }
 
-.sprite-celendar_active {
+.sprite_celendar_active {
     width: 21px;
     height: 22px;
-    background-position: -5px -47px;
+    background-position: -81px -20px;
 }
 
-.sprite-celendar_hover {
+.sprite_celendar_hover {
     width: 21px;
     height: 22px;
-    background-position: -5px -79px;
+    background-position: -20px -82px;
 }
 
-.sprite-minus {
+.sprite_minus {
     width: 12px;
     height: 3px;
-    background-position: -10px -116px;
+    background-position: -81px -82px;
 }
 
-.sprite-minus_active {
+.sprite_minus_active {
     width: 12px;
     height: 3px;
-    background-position: -5px -134px;
+    background-position: -81px -125px;
 }
 
-.sprite-minus_hover {
+.sprite_minus_hover {
     width: 12px;
     height: 3px;
-    background-position: -5px -147px;
+    background-position: -142px -20px;
 }
 
-.sprite-plus {
+.sprite_plus {
     width: 11px;
     height: 11px;
-    background-position: -10px -165px;
+    background-position: -142px -63px;
 }
 
-.sprite-plus_active {
+.sprite_plus_active {
     width: 11px;
     height: 11px;
-    background-position: -5px -191px;
+    background-position: -133px -114px;
 }
 
-.sprite-plus_hover {
+.sprite_plus_hover {
     width: 11px;
     height: 11px;
-    background-position: -5px -212px;
+    background-position: -20px -165px;
 }
