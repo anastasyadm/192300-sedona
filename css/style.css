@@ -218,49 +218,63 @@ a{
   font-size: 30px;
 }
 .people input{
+  text-transform: uppercase;
   width: 85px;
   height: 40px;
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
   background-color: #f2f2f2;
   border: none;
 }
-.data{
+.people input:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.date{
   padding-top: 55px;
 }
 .date_arrive, .date_depature{
   margin-bottom: 30px;
   padding-right: 25px;
 }
-.data label{
+.date label{
   display: inline;
   font-size: 14px;
   margin-right: 15px;
   font-weight: bold;
   margin-left: 0;
 }
-.data input[type="text"]{
+.date input[type="text"]{
   display: inline;
+  text-transform: uppercase;
   width: 315px;
   height: 40px;
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
   background-color: #f2f2f2;
   border: none;
   padding-left: 10px;
   padding-right: 2px;
   box-sizing: border-box;
 }
-.data input:hover{
+.date input:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.date input:hover button{
   background-color: #ebebeb;
 }
-.data input:focus{outline:none;}
-.data button,
+.date input:focus{outline:none;}
+.date button,
 button:active,
 button:focus {
     outline: none;
 }
-.data input:active{
+.date input:active{
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
@@ -270,14 +284,12 @@ button:focus {
   display: inline;
 
 }
-.adults label, .child label{
-  display: inline;
-  vertical-align: top;
+.adults label, .child label {
+  display: inline-block;
+  vertical-align: middle;
   width: auto;
   padding: 10px 0;
-  padding-right: 30px;
   font-size: 14px;
-  top:0px;
   font-weight: bold;
 }
 .adults label{
@@ -867,7 +879,6 @@ input[type=checkbox]:checked + label:before {
   background-repeat: no-repeat;
   background-image: url(../img/footer_active.png);
 }
-
 /*sprite*/
 .calendar_arrive, .calendar_depart{
   width: 40px;
