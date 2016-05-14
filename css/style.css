@@ -265,9 +265,10 @@ a{
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
 
-.date input:hover button{
+input:hover+button, .date input:hover{
   background-color: #ebebeb;
 }
+
 .date input:focus{outline:none;}
 .date button,
 button:active,
@@ -311,7 +312,6 @@ button:focus {
   top: 0px;
   border: none;
   background-color: #f2f2f2;
-  display: inline;
 }
 .people button,
 button:active,
@@ -335,7 +335,7 @@ button:focus {
   text-align: center;
   display: inline;
   margin: 0;
-  padding: 6;
+  padding: 6px;
   font-size: 14px;
   line-height: 20px;
   position:relative;
@@ -919,7 +919,7 @@ input[type=checkbox]:checked + label:before {
 .minus_adults,.minus_child{
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
-  background-position: -128px -50px;
+  background-position: -127px -52px;
 }
 .minus_adults:hover, .minus_child:hover{
   background-image: url(../img/sprite.png);
