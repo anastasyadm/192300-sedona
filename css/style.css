@@ -26,8 +26,12 @@ a{
 }
 .picture{
   position: relative;
-  margin-top: -20px;
+  margin-top: -37px;
   width: 100%;
+}
+.picture>img{
+  width: 100%;
+  height: auto;
 }
 .picture::after{
   content: " ";
@@ -37,6 +41,7 @@ a{
   bottom: 0px;
   left: 0;
   z-index: 100;
+  background-size: cover;
   background-image: url(../img/decorative_el.png);
 }
 .welcome{
@@ -44,26 +49,28 @@ a{
   margin: 52px 0;
   padding: 0 330px;
   position: relative;
+  padding: 1px 330px;
 }
 .welcome>b{
   font-size: 21px;
   line-height: 26px;
 }
 .welcome>p{
-  font-family: "PTSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
 }
 .reasons{
+
   float: left;
   max-height: 256px;
   background-color: #81b3d2;
 }
 .first_reason{
+  margin-top: 15px;
   float: left;
   color: white;
   width: 33.33%;
-  padding-top: 35px;
+  padding-top: 24px;
   padding-bottom: 55px;
   padding-left: 60px;
   padding-right: 60px;
@@ -71,13 +78,16 @@ a{
   text-align: center;
 }
 .first_reason>h2{
+  padding-bottom: 8px;
   width: 150px;
   margin-left: 65px;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
 }
-
+.first_reason>p{
+  padding-top: 8px;
+}
 .first_reason_picture{
   float: right;
   width: 66.66%;
@@ -87,12 +97,13 @@ a{
   height: 100%;
 }
 .advices_item{
+  padding-top: 6px;
   float: left;
   width: 33.33%;
   text-align: center;
 }
 .advices_name{
-  padding-top: 140px;
+  padding-top: 137px;
   padding-bottom: 68px;
   padding-right: 60px;
   padding-left: 60px;
@@ -102,9 +113,8 @@ a{
   font-size: 21px;
 }
 .advices_name>p{
-  padding-top: 10px;
-  font-family: "PTSans","Arial", sans-serif;
-  font-size: 13px;
+  padding-top: 8px;
+  font-size: 14px;
 }
 .house{
   background-position: center 60px;
@@ -126,8 +136,8 @@ a{
   background-color: #81b3d2;
   color: white;
   width: 33.33%;
-  padding-top: 35px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 35px;
   padding-left: 60px;
   padding-right: 60px;
   box-sizing: border-box;
@@ -136,8 +146,12 @@ a{
 .second_reason>h2{
   font-weight: bold;
   font-size: 21px;
-  width: 150px;
+  width: 151px;
   margin-left: 65px;
+  padding-bottom: 8px;
+}
+.second_reason>p:last-child{
+  padding-top: 5px;
 }
 .second_reason_picture{
   float: left;
@@ -188,7 +202,7 @@ a{
   height: 85px;
   background-color: #766357;
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 33px;
 }
 .title_search a{
   color: #ffffff;
@@ -202,10 +216,12 @@ a{
   margin: auto;
   position: relative;
   z-index: 100;
+  margin-bottom: 80px;
 }
 
 .found{
   margin: 50px;
+  margin-bottom: 55px;
   font-size: 21px;
   font-weight: bold;
 }
@@ -222,23 +238,23 @@ a{
   margin-left: 370px;
   margin-right: 370px;
   margin-bottom: 50px;
-  font-family: "PTSans", "Arial",sans-serif;
   font-size: 14px;
 }
 .hotel>h3{
-  margin-top: 50px;
+  margin-top: 59px;
+  margin-bottom: 33px;
   font-weight: bold;
   font-size: 30px;
 }
 .date{
-  padding-top: 55px;
+  padding-top: 52px;
 }
 .date_arrive{
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding-right: 25px;
 }
 .date_depature{
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   padding-right: 25px;
 }
 .date label{
@@ -394,6 +410,8 @@ input[type=checkbox]+label{
   line-height: 25px;
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
+  padding-top: 2px;
 }
 
 input[type=checkbox]+label:before {
@@ -419,9 +437,9 @@ input[type=checkbox]:checked + label:before {
   box-sizing: border-box;
   position: relative;
   color: white;
-  margin-right: 60px;
+  margin-right: 5%;
   margin-top: 15px;
-  margin-left: 90px;
+  margin-left: 1%;
 }
 /*filter*/
 /*_________________________________________________*/
@@ -435,13 +453,13 @@ input[type=checkbox]:checked + label:before {
 .range_filter {
   height: 35px;
   width: 320px;
-  margin: 10px 150px;
+  margin: 10px 31%;
 
   color: #ffffff;
   text-transform: uppercase;
 }
 .price>h2{
-  margin-right: 27px;
+  margin-right: 5%;
   font-size: 16px;
   font-weight: bold;
 }
@@ -468,7 +486,7 @@ input[type=checkbox]:checked + label:before {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 35px;
+  padding-left: 11%;
 }
 .price-controls input {
   width: 30px;
@@ -514,8 +532,8 @@ input[type=checkbox]:checked + label:before {
 }
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 27%;
+  padding: 6px 10.5%;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -536,7 +554,7 @@ input[type=checkbox]:checked + label:before {
   float: left;
   width: 19%;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 27px;
   padding: 0;
   border: none;
   color: white;
@@ -550,8 +568,8 @@ input[type=checkbox]:checked + label:before {
   text-align: left;
   float: left;
   width: 21%;
-  margin-left: 71px;
-  margin-top: 30px;
+  margin-left: 6%;
+  margin-top: 27px;
   padding: 0;
   border: none;
   color: white;
@@ -583,7 +601,7 @@ input[type=checkbox]:checked + label:before {
   background-image: url(../img/filter_background.jpg);
 }
 .options legend{
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .arrow_up>a::before{
@@ -605,23 +623,26 @@ input[type=checkbox]:checked + label:before {
   display: inline-block;
   width: 15px;
   text-decoration: none;
-  margin-top: 5px;
+  margin-top: -1px;
   color: #cccccc;
   font-size: 23px;
   line-height: 20px;
 }
 .arrow_down>a{
-  margin-right: 90px;
+  margin-right: 74px;
 }
 .arrow_up>a{
-  margin-right: -20px;
+  margin-right: 7px;
 }
 .sort>ul>li{
-  float: left;
+ float: left;
   display: inline;
-  margin-top: -14px;
-  margin-left: 47px;
+  margin-top: -12px;
   margin-bottom: 30px;
+}
+.sort>ul>li:nth-child(2){
+  margin-right: 40px;
+  margin-left: 47px;
 }
 .sort>ul>li:nth-child(6){
   float: right;
@@ -632,17 +653,20 @@ input[type=checkbox]:checked + label:before {
 }
 .sort{
   margin-top: 50px;
-  margin-left: -15px;
+  margin-left: -2px;
+  margin-bottom: -3px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .sort>ul>li:first-child{
   font-weight: bold;
   font-size: 21px;
+  margin-top: -15px;
+  margin-left: 34px;
 }
 .sort>ul>li>a{
   color: #b2b2b2;
   float: right;
   font-size: 12px;
-  font-family: "PTSans","Arial", sans-serif;
 }
 .sort>ul>li>a:hover{
   color: #a3c7de;
@@ -652,7 +676,6 @@ input[type=checkbox]:checked + label:before {
 }
 .sort>ul>li{
   font-size: 12px;
-  font-family: "PTSans","Arial", sans-serif;
 }
 .sort_price>a:active{
   color: #a3c7de;
@@ -660,6 +683,7 @@ input[type=checkbox]:checked + label:before {
 }
 .sort_rating_and_type{
   color: #c7c7c7;
+  margin-left: 33px;
   border-bottom: 1px dashed #c7c7c7;
 }
 .sort_rating_and_type:hover{
@@ -676,6 +700,7 @@ input[type=checkbox]:checked + label:before {
   width: 60%;
   margin-left: 30px;
   text-align: left;
+  margin-bottom: 8px;
 }
 .name_hotel>p{
   padding-bottom: 10px;
@@ -693,12 +718,11 @@ input[type=checkbox]:checked + label:before {
 }
 .price_and_type{
   float: left;
-  font-family: "PTSans","Arial", sans-serif;
   font-size: 14px;
   padding-bottom: 10px;
 }
 .amara{
-  margin-left: 30px;
+  margin-left: 37px;
 }
 .desert{
   margin-left: 55px;
@@ -718,7 +742,7 @@ input[type=checkbox]:checked + label:before {
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
-  padding: 5px 14px 5px 14px;
+  padding: 4px 19px 5px 17px;
 }
 .reserve{
   background-color: #766357;
@@ -737,7 +761,7 @@ input[type=checkbox]:checked + label:before {
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
-  padding: 5px 14px 5px 14px;
+  padding: 4px 18px 6px 18px;
 }
 .more{
   background-color: #81b3d2;
@@ -751,30 +775,30 @@ input[type=checkbox]:checked + label:before {
 }
 .amara_resort>img{
   float: left;
-  margin-left: 70px;
+  margin-left: 72px;
 }
 .amara_resort{
   margin-bottom: 30px;
   margin-top: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 14px;
 }
 .desert_quail_inn>img{
   float: left;
-  margin-left: 60px;
-}
-.desert_quail_inn{
-  margin-bottom: 50px;
-  margin-top: 55px;
+  margin-left: 72px;
 }
 .villas_at_poco_diablo>img{
   float: left;
-  margin-left: 60px;
+  margin-left: 72px;
 }
 .villas_at_poco_diablo{
-  margin-bottom: 15px;
-  margin-top: 25px;
+  padding-bottom: 16px;
+  margin-top: 14px;
+  padding-top: 27px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .rating{
-  font-family: "PTSans","Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
@@ -783,9 +807,9 @@ input[type=checkbox]:checked + label:before {
 
 }
 .rating_amara:before{
-  font-size: 25px;
+  font-size: 27px;
   margin-top: 25px;
-  margin-right: 30px;
+  margin-right: 48px;
   content: "\2605\2605\2605\2605";
   color: #81b3d2;
 }
@@ -804,20 +828,22 @@ input[type=checkbox]:checked + label:before {
   color: #81b3d2;
 }
 .rating>p{
-  background-color: #f2f2f2;
-  width: 110px;
-  height: 25px;
-  padding-top: 3px;
-  box-sizing: border-box;
-  margin-right: 70px;
-  margin-top: 40px;
+    background-color: #f2f2f2;
+    padding-top: 0px;
+    box-sizing: border-box;
+    margin-right: 70px;
+    margin-top: 42px;
+    padding-left: 12px;
+    padding-right: 13px;
+    padding-bottom: 7px;
+    padding-top: 0px;
 }
 
 .main_footer{
   width: 100%;
   z-index: 100;
   position: relative;
-  margin-top:75px;
+  margin-top: -1px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .hashtag{
@@ -826,12 +852,12 @@ input[type=checkbox]:checked + label:before {
   font-weight: bold;
   font-size: 21px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 49px;
   margin-bottom: 55px;
 }
 .footer_social{
   float: left;
-  margin-left: 120px;
+  margin-left: 122px;
   margin-top: 35px;
 }
 .social_btn{
@@ -843,7 +869,7 @@ input[type=checkbox]:checked + label:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-right: 5px;
+  margin-right: 2px;
 
 }
 .social_btn_tw{
@@ -872,13 +898,14 @@ input[type=checkbox]:checked + label:before {
   float: right;
   width: 33.33%;
   box-sizing: border-box;
+  margin-right: -13px;
 }
 .footer_copyright>p{
+  margin-left: 88px;
   float: left;
-  font-family: "PTSans","Arial", sans-serif;
   font-size: 14px;
-  margin-top: 50px;
-  margin-left: 85px;
+  margin-top: 49px;
+  margin-bottom: 55px;
 }
 .footer_copyright>a{
   width: 113px;
