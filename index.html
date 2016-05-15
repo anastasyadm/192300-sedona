@@ -106,18 +106,18 @@
           </div>
           <div class="search clearfix">
             <div class="title_search">
-              <a href="#">Поиск гостиницы в Седоне</a>
+              <a class="button_search" href="#">Поиск гостиницы в Седоне</a>
             </div>
             <form class="log_in">
               <div class="date">
                 <div class="date_arrive">
                   <label for="check1">Дата заезда:</label>
-                  <input type="text" id="check1" placeholder="24 апреля 2016">
+                  <input name="name_date_arr" type="text" id="check1" placeholder="24 апреля 2016">
                   <button class="calendar_arrive" type="button"></button>
                 </div>
                 <div class="date_depature">
                   <label for="check2">Дата выезда:</label>
-                  <input type="text" id="check2" placeholder="4 июля 2016">
+                  <input name="name_date_dep" type="text" id="check2" placeholder="4 июля 2016">
                   <button class="calendar_depart" type="button"></button>
                 </div>
               </div>
@@ -155,5 +155,37 @@
           </section>
         </div>
       </footer>
+      <script>
+        var button = document.querySelector(".button_search");
+        var search = document.querySelector("form");
+        var close = document.querySelector(".hotel");
+        var form = document.querySelector("form");
+        var date_arrive = search.querySelector("[name=name_date_arr]");
+        var date_depature = search.querySelector("[name=name_date_dep]");
+        button.addEventListener("click", function(event) {
+         event.preventDefault();
+         search.classList.add("search_show");
+         });
+         form.addEventListener("submit", function(event){
+           if (!date_arrive.value || !date_depature.value){
+             event.preventDefault();
+             console.log("date");
+           }
+         })
+         window.addEventListener("keydown", function(event){
+           if (event.keycode === 27){
+             console.log("ttttt")
+             if (search.classList.contains("search_show")){
+               search.classList.remove("search_show");
+               console.log("tfttft");
+             }
+           }
+         })
+        /*close.addEventListener("click", function(event){
+          event.preventDefault();
+          console.log("tfttft")
+          popup.classList.remove("search_show");
+        })*/
+      </script>
   </body>
 </html>
