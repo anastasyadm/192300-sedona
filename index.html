@@ -171,7 +171,7 @@
              event.preventDefault();
              console.log("date");
            }
-         })
+         });
          window.addEventListener("keydown", function(event){
            if (event.keycode === 27){
              console.log("ttttt")
@@ -180,12 +180,12 @@
                console.log("tfttft");
              }
            }
-         })
-        /*close.addEventListener("click", function(event){
-          event.preventDefault();
-          console.log("tfttft")
-          popup.classList.remove("search_show");
-        })*/
+         });
+        close.addEventListener("click", function(event){
+              console.log("button");
+              event.preventDefault();
+              search.classList.remove("search_show");
+        });
       </script>
   </body>
 </html>
