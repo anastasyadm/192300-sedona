@@ -215,11 +215,6 @@ a{
   z-index: 1;
   margin-top:85px;
 }
-.log_in{
-  display: none;
-  background-color: white;
-  width: 100%;
-}
 .hotel>p{
   margin-left: 370px;
   margin-right: 370px;
@@ -1006,13 +1001,38 @@ input[type=checkbox]:checked + label:before {
     background-position: -20px -165px;
 }
 /*javascript*/
-.search_show {
-  display: block;
-  animation: bounce 0.6s;
+
+.search_form{
+display: none;
+background-color: white;
+width: 100%;
 }
+
 @keyframes bounce {
- 0% { transform: translateY(-2000px); }
- 70% { transform: translateY(30px); }
- 90% { transform: translateY(-10px); }
- 100% { transform: translateY(0); }
- }
+0% {
+transform: translateY(-5px);
+}
+100% {
+transform: translateY(0);
+}
+}
+.search_form_show {
+display: block;
+animation: bounce 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes shake {
+0%, 100% {
+transform: translateX(0);
+}
+10%, 30%, 50%, 70%, 90% {
+transform: translateX(-5px);
+}
+20%, 40%, 60%, 80% {
+transform: translateX(5px);
+}
+}
+
+.search_form_error {
+animation: shake 0.6s;
+}

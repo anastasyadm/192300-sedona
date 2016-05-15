@@ -108,7 +108,7 @@
             <div class="title_search">
               <a class="button_search" href="#">Поиск гостиницы в Седоне</a>
             </div>
-            <form class="log_in">
+            <form class="search_form" action="#" method="get">
               <div class="date">
                 <div class="date_arrive">
                   <label for="check1">Дата заезда:</label>
@@ -155,37 +155,6 @@
           </section>
         </div>
       </footer>
-      <script>
-        var button = document.querySelector(".button_search");
-        var search = document.querySelector("form");
-        var close = document.querySelector(".hotel");
-        var form = document.querySelector("form");
-        var date_arrive = search.querySelector("[name=name_date_arr]");
-        var date_depature = search.querySelector("[name=name_date_dep]");
-        button.addEventListener("click", function(event) {
-         event.preventDefault();
-         search.classList.add("search_show");
-         });
-         form.addEventListener("submit", function(event){
-           if (!date_arrive.value || !date_depature.value){
-             event.preventDefault();
-             console.log("date");
-           }
-         });
-         window.addEventListener("keydown", function(event){
-           if (event.keycode === 27){
-             console.log("ttttt")
-             if (search.classList.contains("search_show")){
-               search.classList.remove("search_show");
-               console.log("tfttft");
-             }
-           }
-         });
-        close.addEventListener("click", function(event){
-              console.log("button");
-              event.preventDefault();
-              search.classList.remove("search_show");
-        });
-      </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
