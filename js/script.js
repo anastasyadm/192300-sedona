@@ -1,4 +1,3 @@
-
 var link = document.querySelector(".button_search");
 var form = document.querySelector(".search_form");
 var checkin = form.querySelector("[name=name_date_arr]");

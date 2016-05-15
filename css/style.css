@@ -214,6 +214,10 @@ a{
   position: absolute;
   z-index: 1;
   margin-top:85px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url(../img/map.jpg);
+
 }
 .hotel>p{
   margin-left: 370px;
