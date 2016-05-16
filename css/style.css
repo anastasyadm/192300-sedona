@@ -218,6 +218,8 @@ a{
   position: relative;
   z-index: 100;
   margin-bottom: 83px;
+  margin-top: 50px;
+
 }
 
 .found{
@@ -229,7 +231,7 @@ a{
 .google_map{
   position: absolute;
   z-index: 1;
-  margin-top: 85px;
+  margin-top: 135px;
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: url(../img/map.jpg);
@@ -922,6 +924,8 @@ input[type=checkbox]:checked + label:before {
   background-position: center;
   display: inline-block;
   box-sizing: border-box;
+  float: left;
+  margin-left: 4%;
 }
 .website_by{
   background-repeat: no-repeat;
