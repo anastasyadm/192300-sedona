@@ -229,7 +229,7 @@ a{
 .google_map{
   position: absolute;
   z-index: 1;
-  margin-top: 136px;
+  margin-top: 85px;
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: url(../img/map.jpg);
@@ -431,7 +431,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .price{
-  float: right;
+  float: left;
   width: 40%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -454,13 +454,13 @@ input[type=checkbox]:checked + label:before {
 .range_filter {
   height: 35px;
   width: 320px;
-  margin: 10px 31%;
+  margin: 10px 51%;
 
   color: #ffffff;
   text-transform: uppercase;
 }
 .price>h2{
-  margin-right: 4%;
+  margin-right: -35%;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 2px;
