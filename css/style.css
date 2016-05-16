@@ -927,7 +927,7 @@ input[type=checkbox]:checked + label:before {
   display: inline-block;
   box-sizing: border-box;
   float: left;
-  margin-left: 4%;
+  margin-left: 2%;
 }
 .website_by{
   background-repeat: no-repeat;
