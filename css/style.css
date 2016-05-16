@@ -46,10 +46,9 @@ a{
 }
 .welcome{
   z-index: 200;
-  margin: 49px 0;
-  padding: 0 330px;
   position: relative;
-  padding: 1px 330px;
+  width: 450px;
+  margin: 51px auto 37px;
 }
 .welcome>b{
   font-size: 21px;
@@ -60,30 +59,32 @@ a{
   line-height: 26px;
 }
 .reasons{
-
+  width: 100%;
   float: left;
   max-height: 256px;
   background-color: #81b3d2;
 }
 .first_reason{
-  margin-top: 15px;
-  float: left;
-  color: white;
-  width: 33.33%;
-  padding-top: 24px;
-  padding-bottom: 55px;
-  padding-left: 60px;
-  padding-right: 60px;
-  box-sizing: border-box;
-  text-align: center;
+    float: left;
+    color: white;
+    width: 33.33%;
+    padding-top: 56px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    text-align: center;
 }
 .first_reason>h2{
   padding-bottom: 7px;
   width: 150px;
-  margin-left: 65px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
+}
+.first_reason>p{
+  width: 77%;
+  padding-top: 5%;
+  margin: 0 auto;
 }
 .first_reason_picture{
   float: right;
@@ -101,7 +102,7 @@ a{
 }
 .advices_name{
   padding-top: 137px;
-  padding-bottom: 68px;
+  padding-bottom: 82px;
   padding-right: 60px;
   padding-left: 60px;
 }
@@ -112,6 +113,8 @@ a{
 .advices_name>p{
   padding-top: 8px;
   font-size: 14px;
+  width: 102%;
+  margin: 0 auto
 }
 .house{
   background-position: center 60px;
@@ -133,10 +136,8 @@ a{
   background-color: #81b3d2;
   color: white;
   width: 33.33%;
-  padding-top: 40px;
+  padding-top: 54px;
   padding-bottom: 32px;
-  padding-left: 60px;
-  padding-right: 60px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -144,11 +145,12 @@ a{
   font-weight: bold;
   font-size: 21px;
   width: 151px;
-  margin-left: 65px;
-  padding-bottom: 4px;
+  margin: 0 auto;
 }
-.second_reason>p:last-child{
-  padding-top: 5px;
+.second_reason>p{
+  padding-top: 6%;
+  width: 77%;
+  margin: 0 auto;
 }
 .second_reason_picture{
   float: left;
@@ -162,18 +164,19 @@ a{
   float: left;
   width: 33.33%;
   text-align: center;
-  padding-top: 28px;
-  padding-bottom: 45px;
-  padding-right: 65px;
-  padding-left: 65px;
+  padding-top: 49px;
+  padding-bottom: 61px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 .causes>h2{
   width: 150px;
-  margin-left: 65px;
+  margin: 0 auto;
 }
 .causes>p{
-  padding-top: 3px;
+  padding-top: 5%;
+  width: 81%;
+  margin: 0 auto;
 }
 .cause{
   background-color: #eeeeee;
@@ -206,6 +209,7 @@ a{
   font-size: 21px;
   font-weight: bold;
   padding-top: 30px;
+  margin-top: 51px;
 }
 .search{
   width: 565px;
@@ -225,17 +229,16 @@ a{
 .google_map{
   position: absolute;
   z-index: 1;
-  margin-top:85px;
+  margin-top: 136px;
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: url(../img/map.jpg);
 
 }
 .hotel>p{
-  margin-left: 370px;
-  margin-right: 370px;
-  margin-bottom: 50px;
+  width: 33%;
   font-size: 14px;
+  margin: 0 auto;
 }
 .hotel>h3{
   margin-top: 59px;
@@ -862,8 +865,8 @@ input[type=checkbox]:checked + label:before {
 }
 .footer_social{
   float: left;
-  margin-left: 122px;
-  margin-top: 35px;
+  width: 23%;
+  margin: 35px auto 0;
 }
 .social_btn{
   width: 50px;
@@ -901,12 +904,11 @@ input[type=checkbox]:checked + label:before {
 }
 .footer_copyright{
   float: right;
-  width: 33.33%;
+  width: 24.33%;
   box-sizing: border-box;
-  margin-right: -13px;
+  margin: 0 auto;
 }
 .footer_copyright>p{
-  margin-left: 88px;
   float: left;
   font-size: 14px;
   margin-top: 49px;
@@ -917,8 +919,6 @@ input[type=checkbox]:checked + label:before {
   height: 39px;
   margin-top: 40px;
   padding: 0;
-  margin-right: 110px;
-  margin-left: 5px;
   background-position: center;
   display: inline-block;
   box-sizing: border-box;
