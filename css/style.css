@@ -1,3 +1,42 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("fonts/symbols-sedona.woff") format("woff"),
+       url("fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+
 body{
   font-family: "PT Sans", "Tahoma", sans-serif;
   line-height: 21px;
@@ -187,7 +226,7 @@ a{
 }
 .found{
   width: 455px;
-  height: 55px;
+  height: 60px;
   text-transform: uppercase;
   color: white;
   border: none;
@@ -202,7 +241,7 @@ a{
   color: #88b6d1;
 }
 .title_search{
-  width: 565px;
+  width: 568px;
   height: 85px;
   background-color: #766357;
   box-sizing: border-box;
@@ -246,7 +285,7 @@ iframe{
 .hotel>p{
   width: 33%;
   font-size: 14px;
-  margin: 0 auto 55px;
+  margin: 0 auto 52px;
 }
 .hotel>h3{
   margin-top: 59px;
@@ -255,15 +294,15 @@ iframe{
   font-size: 30px;
 }
 .date{
-  padding-top: 52px;
+  padding-top: 54px;
 }
 .date_arrive{
   margin-bottom: 28px;
-  padding-right: 25px;
+  padding-right: 30px;
 }
 .date_depature{
-  margin-bottom: 17px;
-  padding-right: 25px;
+  margin-bottom: 13px;
+  padding-right: 31px;
 }
 .date label{
   display: inline;
@@ -282,7 +321,7 @@ iframe{
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
-  padding-left: 10px;
+  padding-left: 14px;
   padding-right: 2px;
   box-sizing: border-box;
 }
@@ -328,17 +367,18 @@ button:focus {
 .adults label, .child label {
   display: inline-block;
   vertical-align: top;
-  padding-top: 20px;
+  padding-top: 23px;
   width: auto;
   font-size: 14px;
   font-weight: 700;
 }
 .adults label{
-  margin-left: 35px;
-  padding-right: 15px;
+  margin-left: 38px;
+  padding-right: 17px;
 }
 .child label{
-  margin-left: 15px;
+  margin-left: 16px;
+  padding-right: 6px;
 }
 .people button,
 button:active,
@@ -392,17 +432,17 @@ button:focus {
   width: 20%;
 }
 
-.main_navigation>ul>li>a{
+.main_navigation a{
   color: #000000;
 }
-.main_navigation>ul>li{
+.main_navigation li{
   display: inline;
 }
-.main_navigation>ul>li>a:hover{
+.main_navigation a:hover{
   color: #81b3d2;
   font-weight: 700;
 }
-.main_navigation>ul>li>a:active{
+.main_navigation a:active{
   color: #b2b2b2;
   font-weight: 700;
 }
@@ -420,24 +460,35 @@ input[type=checkbox]+label{
   vertical-align: top;
   box-sizing: border-box;
   padding-top: 3.5px;
-  margin-bottom: -2.5px;
+  margin-right: 23px;
+  margin-bottom: -3px;
 }
 input[type=checkbox]:disabled{
+  display: none;
+}
+input[type=checkbox]:disabled+label{
   line-height: 25px;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
   padding-top: 3.5px;
-  margin-bottom: -2.5px;
+  margin-right: 17px;
+  margin-bottom: -3px;
+}
+input[type=checkbox]:disabled+label:before {
+  content: "\2610";
+  font-size: 25px;
+  font-family: "symbols-sedona";
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 17px;
+  margin-bottom: 10px;
   color: #6a6a6a;
 }
-input[type=checkbox]:checked:disabled{
-  line-height: 25px;
-  display: inline-block;
-  vertical-align: top;
-  box-sizing: border-box;
-  padding-top: 3.5px;
-  margin-bottom: -2.5px;
+input[type=checkbox]:checked:disabled+label:before{
+  content: "\2611";
+  margin-right: 17px;
+  margin-bottom: 10px;
   color: #6a6a6a;
 }
 input[type=checkbox]+label:before {
@@ -446,13 +497,13 @@ input[type=checkbox]+label:before {
   font-family: "symbols-sedona";
   display: inline-block;
   vertical-align: top;
-  margin-right: 10px;
+  margin-right: 23px;
   margin-bottom: 10px;
   color: white;
 }
 input[type=checkbox]:checked + label:before {
   content: "\2611";
-  margin-right: 6.5px;
+  margin-right: 19.5px;
 }
 
 .price{
@@ -659,21 +710,21 @@ input[type=checkbox]:checked + label:before {
 .arrow_up>a{
   margin-right: 7px;
 }
-.sort>ul>li{
+.sort li{
   float: left;
   display: inline;
   margin-top: -12px;
   margin-bottom: 30px;
 }
-.sort>ul>li:nth-child(2){
+.sort li:nth-child(2){
   margin-right: 40px;
   margin-left: 47px;
 }
-.sort>ul>li:nth-child(6){
+.sort li:nth-child(6){
   float: right;
   margin-right: 0px;
 }
-.sort>ul>li:nth-child(7){
+.sort li:nth-child(7){
   float: right;
 }
 .sort{
@@ -682,29 +733,28 @@ input[type=checkbox]:checked + label:before {
   margin-bottom: -3px;
   border-bottom: 1px solid #e5e5e5;
 }
-.sort>ul>li:first-child{
+.sort li:first-child{
   font-weight: 700;
   font-size: 21px;
   margin-top: -15px;
   margin-left: 34px;
 }
-.sort>ul>li>a{
+.sort a{
   color: #b2b2b2;
   float: right;
   font-size: 12px;
 }
-.sort>ul>li>a:hover{
+.sort a:hover{
   color: #a3c7de;
 }
-.sort>ul>li>a:active{
+.sort a:active{
   color: #000000;
 }
-.sort>ul>li{
+.sort li{
   font-size: 12px;
 }
 .sort_price>a:active{
   color: #a3c7de;
-  border-bottom: 1px solid #000000;
 }
 .sort_rating_and_type{
   color: #c7c7c7;
@@ -906,15 +956,30 @@ input[type=checkbox]:checked + label:before {
   background-repeat: no-repeat;
   background-image: url(../img/twitter.png);
 }
+.social_btn_tw:active{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/twitter_active.png);
+}
 .social_btn_fb{
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/facebook.png);
 }
+.social_btn_fb:active{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/facebook_active.png);
+}
 .social_btn_youtube{
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/youtube.png);
+}
+.social_btn_youtube:active{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/youtube_active.png);
 }
 .social_btn:hover{
   background-color: #669ec0;
@@ -964,6 +1029,7 @@ input[type=checkbox]:checked + label:before {
   height: 40px;
   border: none;
   display: inline;
+  right: 53px;
   position: absolute;
   background-color: #f2f2f2;
   background-image: url(../img/sprite.png);
@@ -993,7 +1059,7 @@ input[type=checkbox]:checked + label:before {
 .plus_adults:active, .plus_child:active{
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
-  background-position: -70px -107px;
+  background-position: -69px -108px;
 }
 .minus_adults,.minus_child{
   background-image: url(../img/sprite.png);
@@ -1008,7 +1074,7 @@ input[type=checkbox]:checked + label:before {
 .minus_adults:active, .minus_child:active{
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
-  background-position: -118px -103px;
+  background-position: -118px -102px;
 }
 
 .sprite {
@@ -1070,7 +1136,7 @@ input[type=checkbox]:checked + label:before {
   height: 11px;
   background-position: -20px -165px;
 }
-/*javascript*/
+/*animation*/
 
 .search_form{
   display: none;
@@ -1107,40 +1173,3 @@ input[type=checkbox]:checked + label:before {
   animation: shake 0.6s;
 }
 
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
-}
-
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
-}
-
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-calendar::before { content: "\e800"; } /* "" */
-.icon-plus::before { content: "\e801"; } /* "" */
-.icon-minus::before { content: "\e802"; } /* "" */
-.icon-youtube::before { content: "\f39e"; } /* "" */
