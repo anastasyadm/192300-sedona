@@ -87,7 +87,7 @@ a{
   z-index: 200;
   position: relative;
   width: 490px;
-  margin: 51px auto 62px;
+  margin: 51px auto 52px;
 }
 .welcome>b{
   font-size: 21px;
@@ -96,6 +96,7 @@ a{
 .welcome>p{
   font-size: 14px;
   line-height: 26px;
+  margin-top: 27px;
 }
 .reasons{
   width: 100%;
@@ -206,7 +207,7 @@ a{
   width: 33.33%;
   text-align: center;
   padding-top: 49px;
-  padding-bottom: 61px;
+  padding-bottom: 58px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -258,7 +259,7 @@ a{
 }
 .search{
   width: 565px;
-  height: 480px;
+  height: 484px;
   margin: auto;
   position: relative;
   z-index: 100;
